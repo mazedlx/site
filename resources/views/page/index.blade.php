@@ -230,7 +230,7 @@
             <div class="row">
                 <div class="col-md-4 ">
                     <div class="grid mask">
-                        <a data-toggle="modal" href="#portfolioModal1"><img class="img-responsive" src="{{ public_path() }}/images/portfolio/folio01.png" alt=""></a>
+                        <a data-toggle="modal" href="#portfolioModal1"><img class="img-responsive" src="images/portfolio/folio01.png" alt=""></a>
                         <p class="text-center">Arbeitswelt &amp; Schule - Onlinenanmeldung</p>
                     </div><!-- /grid-mask -->
                 </div><!-- /col -->
@@ -259,7 +259,7 @@
 
                 <div class="col-md-4 ">
                     <div class="grid mask">
-                        <a data-toggle="modal" href="#portfolioModal2"><img class="img-responsive" src="/images/portfolio/folio02.png" alt=""></a>
+                        <a data-toggle="modal" href="#portfolioModal2"><img class="img-responsive" src="images/portfolio/folio02.png" alt=""></a>
                         <p class="text-center">Krankenhausbewertung &Ouml;sterreich</p>
                     </div><!-- /grid-mask -->
                 </div><!-- /col -->
@@ -287,7 +287,7 @@
 
                 <div class="col-md-4 ">
                     <div class="grid mask">
-                        <a data-toggle="modal" href="#portfolioModal3"><img class="img-responsive" src="/images/portfolio/folio03.png" alt=""></a>
+                        <a data-toggle="modal" href="#portfolioModal3"><img class="img-responsive" src="images/portfolio/folio03.png" alt=""></a>
                         <p class="text-center">Haarstudio Verenea Leeb</p>
                     </div><!-- /grid-mask -->
                 </div><!-- /col -->
@@ -317,7 +317,7 @@
             <div class="row">
                 <div class="col-md-4 ">
                     <div class="grid mask">
-                        <a data-toggle="modal" href="#portfolioModal4"><img class="img-responsive" src="/images/portfolio/folio04.png" alt=""></a>
+                        <a data-toggle="modal" href="#portfolioModal4"><img class="img-responsive" src="images/portfolio/folio04.png" alt=""></a>
                         <p class="text-center">L14 - Onlineanmeldung</p>
                     </div><!-- /grid-mask -->
                 </div><!-- /col -->
@@ -344,7 +344,7 @@
 
                 <div class="col-md-4 ">
                     <div class="grid mask">
-                        <a data-toggle="modal" href="#portfolioModal5"><img class="img-responsive" src="/images/portfolio/folio05.png" alt=""></a>
+                        <a data-toggle="modal" href="#portfolioModal5"><img class="img-responsive" src="images/portfolio/folio05.png" alt=""></a>
                         <p class="text-center">AK Fonds - Onlinenanmeldung</p>
                     </div><!-- /grid-mask -->
                 </div><!-- /col -->
@@ -372,7 +372,7 @@
 
                 <div class="col-md-4 ">
                     <div class="grid mask">
-                        <a data-toggle="modal" href="#portfolioModal6"><img class="img-responsive" src="/images/portfolio/folio06.png" alt=""></a>
+                        <a data-toggle="modal" href="#portfolioModal6"><img class="img-responsive" src="images/portfolio/folio06.png" alt=""></a>
                         <p class="text-center">Paul Mies Baum und Gartenpflege</p>
                     </div><!-- /grid-mask -->
                 </div><!-- /col -->
@@ -402,7 +402,7 @@
             <div class="row">
                 <div class="col-md-offset-4 col-md-4 ">
                     <div class="grid mask">
-                        <a data-toggle="modal" href="#portfolioModal7"><img class="img-responsive" src="/images/portfolio/folio07.png" alt=""></a>
+                        <a data-toggle="modal" href="#portfolioModal7"><img class="img-responsive" src="images/portfolio/folio07.png" alt=""></a>
                         <p class="text-center">
                             Agnes Streissler-F&uuml;hrer<br>Wirtschaftspolitische Beratung
                         </p>
