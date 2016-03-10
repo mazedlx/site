@@ -29,3 +29,7 @@ Route::get('/', function () {
 Route::group(['middleware' => ['web']], function () {
     //
 });
+
+Route::get('sports', function() {
+    return redirect('https://mazedlx.net/_site/sports');
+});
