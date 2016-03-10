@@ -400,7 +400,7 @@
             </div><!-- /.row -->
 
             <div class="row">
-                <div class="col-md-offset-4 col-md-4 ">
+                <div class="col-md-4 ">
                     <div class="grid mask">
                         <a data-toggle="modal" href="#portfolioModal7"><img class="img-responsive" src="images/portfolio/folio07.png" alt=""></a>
                         <p class="text-center">
@@ -426,6 +426,35 @@
                                     </ul>
                                 </p>
                                 <p><b><a class="portfolioLink" href="https://aws.arbeiterkammer.at">Zur Seite</a></b></p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Schlie&szlig;en</button>
+                            </div>
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
+
+                <div class="col-md-offset-4 col-md-4">
+                    <div class="grid mask">
+                        <a data-toggle="modal" href="#portfolioModal8"><img class="img-responsive" src="images/portfolio/folio08.png" alt=""></a>
+                        <p class="text-center">
+                            AK Arbeitsjubilare - Onlineanmeldung
+                        </p>
+                    </div><!-- /grid-mask -->
+                </div><!-- /col -->
+
+                <div class="modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-labelledby="portfolioModal8Label" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h4 class="modal-title">Arbeitsjubilare - Onlineanmeldesystem</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p><img class="img-responsive" src="images/portfolio/folio08.png" alt=""></p>
+                                <p>
+                                    Projekt f&uuml;r die AK Wien. Online-Anmeldesystem mit Saalplanbuchung.
+                                </p>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Schlie&szlig;en</button>
