@@ -230,7 +230,7 @@
             <div class="row">
                 <div class="col-md-4 ">
                     <div class="grid mask">
-                        <a data-toggle="modal" href="#portfolioModal1"><img class="img-responsive" src="{{ base_path() }}/images/portfolio/folio01.png" alt=""></a>
+                        <a data-toggle="modal" href="#portfolioModal1"><img class="img-responsive" src="{{ public_path() }}/images/portfolio/folio01.png" alt=""></a>
                         <p class="text-center">Arbeitswelt &amp; Schule - Onlinenanmeldung</p>
                     </div><!-- /grid-mask -->
                 </div><!-- /col -->
