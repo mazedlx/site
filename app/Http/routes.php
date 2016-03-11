@@ -33,3 +33,7 @@ Route::group(['middleware' => ['web']], function () {
 Route::get('sports', function() {
     return redirect('https://sports.mazedlx.net');
 });
+
+Route::get('randomizer', function() {
+    return redirect('https://randomizer.mazedlx.net');
+});
