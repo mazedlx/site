@@ -34,9 +34,9 @@
                 <div class="container">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                            <span class="icon icon-embed2" style="font-size:30px; color:#ffffff;"></span>
+                            <i class="fa fa-bars" aria-hidden="true" style="color: #ffffff;"></i>
                         </button>
-                        <a class="navbar-brand hidden-xs hidden-sm scrollTo" href="#home"><span class="icon icon-embed2" style="font-size:18px; color:#fffff;"></span></a>
+                        <a class="navbar-brand hidden-xs hidden-sm scrollTo" href="#home"><i class="fa fa-code" aria-hidden="true" style="color: #ffffff;"></i></a>
                     </div>
 
                     <div class="navbar-collapse collapse">
@@ -55,7 +55,7 @@
 
         <div id="home" name="home">
             <header class="clearfix">
-                <h1><span class="icon icon-lab"></span></h1>
+                <h1><i class="fa fa-flask" aria-hidden="true"></i></h1>
                 <p>mazedlx.net webproductions</p>
             </header>
         </div>
@@ -63,7 +63,7 @@
         <div id="greywrap">
             <div class="row">
                 <div class="col-lg-4 callout">
-                    <span class="icon icon-embed2"></span>
+                    <i class="fa fa-code fa-5x" aria-hidden="true"></i>
                     <h2>Full Stack Development</h2>
                     <p>
                         Wir handfertigen Ihre Website. Und Ihren Blog. Und Ihr CMS. Und Ihre supercustomizable Webapplikation. <br>
@@ -73,7 +73,7 @@
                 </div><!-- col-lg-4 -->
 
                 <div class="col-lg-4 callout">
-                    <span class="icon icon-heart"></span>
+                    <i class="fa fa-heart fa-5x" aria-hidden="true"></i>
                     <h2>Mit Liebe gemacht</h2>
                     <p>
                         Wir erstellen keine 0815-Produkte, wir schaffen IHR Produkt, und das mit viel Liebe und Hingabe.
@@ -82,7 +82,7 @@
                 </div><!-- col-lg-4 -->
 
                 <div class="col-lg-4 callout">
-                    <span class="icon icon-aid-kit"></span>
+                    <i class="fa fa-medkit fa-5x" aria-hidden="true"></i>
                     <h2>Support</h2>
                     <p>
                         IT-Probleme sind f&uuml;r uns Herausforderungen. Wir helfen gerne!
@@ -472,9 +472,10 @@
             <h1>HANDGEMACHT IN WIEN</h1>
             <hr>
             <p>
-                <a class="icon icon-twitter" href="https://twitter.com/mazedlx"></a> |
-                <a class="icon icon-github" href="https://github.com/mazedlx"></a> |
-                <a class="icon icon-facebook" href="https://facebook.com/mazedlx"></a>
+                <a class="fa fa-envelope fa-fw fa-2x" href="mailto:mazedlx@gmail.com"></a>
+                <a class="fa fa-github fa-fw fa-2x" href="https://github.com/mazedlx"></a>
+                <a class="fa fa-twitter fa-fw fa-2x" href="https://twitter.com/mazedlx"></a>
+                <a class="fa fa-facebook-official fa-fw fa-2x" href="https://facebook.com/mdxwebprod"></a>
             </p>
         </div><!-- container -->
     </section><!-- section -->
@@ -486,13 +487,13 @@
             <hr>
             <div class="col-lg-offset-4 col-lg-4">
                 <p>
-                    <span class="icon icon-user"></span> Christian Leo-Pernold <br>
-                    <span class="icon icon-home"></span> Glockenblumengasse 36/6/2, 1220 Wien <br/>
-                    <span class="icon icon-mobile"></span> +43 660 456 3193 <br/>
-                    <span class="icon icon-envelop"></span><a href="mailto:mazedlx@gmail.com"> mazedlx@gmail.com</a> <br/>
-                    <span class="icon icon-github"></span><a href="https://github.com/mazedlx"> GitHub </a> <br/>
-                    <span class="icon icon-twitter"></span><a href="https://twitter.com/mazedlx"> @mazedlx </a> <br/>
-                    <span class="icon icon-facebook"></span><a href="https://facebook.com/mazedlx"> Facebook </a> <br/>
+                    <i class="fa fa-user fa-fw" aria-hidden="true"></i> DI(FH) Christian Leo-Pernold <br>
+                    <i class="fa fa-home fa-fw" aria-hidden="true"></i> Glockenblumengasse 36/6/2, 1220 Wien <br/>
+                    <i class="fa fa-mobile fa-fw" aria-hidden="true"></i> +43 660 456 3193 <br/>
+                    <i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i><a href="mailto:mazedlx@gmail.com"> mazedlx@gmail.com</a> <br/>
+                    <i class="fa fa-github fa-fw" aria-hidden="true"></i><a href="https://github.com/mazedlx"> github.com/mazedlx </a> <br/>
+                    <i class="fa fa-twitter fa-fw" aria-hidden="true"></i><a href="https://twitter.com/mazedlx"> @mazedlx </a> <br/>
+                    <i class="fa fa-facebook-official fa-fw" aria-hidden="true"></i><a href="https://facebook.com/mazedlx"> mdxwebprod </a> <br/>
                 </p>
             </div><!-- col -->
         </div>

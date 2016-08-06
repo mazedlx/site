@@ -3,6 +3,7 @@ var elixir = require('laravel-elixir');
 elixir(function(mix) {
     mix.copy('bower_components/bootstrap/dist/fonts', 'public/fonts');
     mix.copy('bower_components/icomoon-bower/fonts', 'public/css/fonts');
+    mix.copy('bower_components/font-awesome/fonts', 'public/css/fonts');
     mix.copy('bower_components/html5shiv/dist/html5shiv.js', 'public/js');
     mix.copy('bower_components/respond/src/respond.js', 'public/js');
     mix.copy('resources/assets/images', 'public/images');
@@ -12,6 +13,7 @@ elixir(function(mix) {
         '../../../bower_components/bootstrap/dist/css/bootstrap.css',
         '../../../bower_components/icomoon-bower/style.css',
         '../../../bower_components/animate.css/animate.css',
+        '../../../bower_components/font-awesome/css/font-awesome.css',
         'main.css'
     ], 'public/css/app.css');
 
