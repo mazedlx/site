@@ -45,7 +45,7 @@
                             <li><a href="#about" class="scrollTo"> &Uuml;ber uns</a></li>
                             <li><a href="#services" class="scrollTo"> Leistungen</a></li>
                             <li><a href="#portfolio" class="scrollTo"> Portfolio</a></li>
-                            <!-- <li><a href="#blog" class="scrollTo"> Blog</a></li> -->
+                            <li><a href="https://blog.mazedlx.net" class="" target="_blank"> Blog</a></li>
                             <li><a href="#contact" class="scrollTo"> Kontakt</a></li>
                         </ul>
                     </div><!--/.nav-collapse -->
