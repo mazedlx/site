@@ -482,7 +482,7 @@
                             <div class="modal-body">
                                 <p><img class="img-responsive" src="images/portfolio/folio09.png" alt=""></p>
                                 <p>
-                                    WordPress-Theme und Serveradminisration für www.bachelorette-party.at
+                                    WordPress-Setup und WordPress-Theme nach eigenen Wünschen für www.bachelorette-party.at
                                 </p>
                                 <p><b><a class="portfolioLink" href="http://www.bachelorette-party.at">Zur Seite</a></b></p>
                             </div>
