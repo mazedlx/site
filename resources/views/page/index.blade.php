@@ -434,7 +434,7 @@
                     </div><!-- /.modal-dialog -->
                 </div><!-- /.modal -->
 
-                <div class="col-md-offset-4 col-md-4">
+                <div class="col-md-4">
                     <div class="grid mask">
                         <a data-toggle="modal" href="#portfolioModal8"><img class="img-responsive" src="images/portfolio/folio08.png" alt=""></a>
                         <p class="text-center">
@@ -462,6 +462,36 @@
                         </div><!-- /.modal-content -->
                     </div><!-- /.modal-dialog -->
                 </div><!-- /.modal -->
+
+                <div class="col-md-4">
+                    <div class="grid mask">
+                        <a data-toggle="modal" href="#portfolioModal9"><img class="img-responsive" src="images/portfolio/folio09.png" alt=""></a>
+                        <p class="text-center">
+                            www.bachelorette-party.at
+                        </p>
+                    </div><!-- /grid-mask -->
+                </div><!-- /col -->
+
+                <div class="modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-labelledby="portfolioModal9Label" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h4 class="modal-title">www.bachelorette-party.at</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p><img class="img-responsive" src="images/portfolio/folio09.png" alt=""></p>
+                                <p>
+                                    WordPress-Theme und Serveradminisration für www.bachelorette-party.at
+                                </p>
+                                <p><b><a class="portfolioLink" href="http://www.bachelorette-party.at">Zur Seite</a></b></p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Schlie&szlig;en</button>
+                            </div>
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->                
             </div><!-- /.row -->
         </div>
     </div><!-- /container -->
