@@ -3,7 +3,7 @@ var elixir = require('laravel-elixir');
 elixir(function(mix) {
     mix.copy('bower_components/bootstrap/dist/fonts', 'public/fonts');
     mix.copy('bower_components/icomoon-bower/fonts', 'public/css/fonts');
-    mix.copy('bower_components/font-awesome/fonts', 'public/css/fonts');
+    mix.copy('bower_components/font-awesome/fonts', 'public/fonts');
     mix.copy('bower_components/html5shiv/dist/html5shiv.js', 'public/js');
     mix.copy('bower_components/respond/src/respond.js', 'public/js');
     mix.copy('resources/assets/images', 'public/images');
