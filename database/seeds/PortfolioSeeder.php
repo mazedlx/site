@@ -157,7 +157,7 @@ class PortfolioSeeder extends Seeder
             'title' => 'Elektronischer Fragebogen',
             'description' => '
                 Projekt für die AK Wien: Elektronischer Fragebogen zum Thema "Qualität des Arbeitslebens
-                der österreichischen ArbeitnehmerInnen.
+                der österreichischen ArbeitnehmerInnen".
             ',
             'technical' => '
             <ul>
