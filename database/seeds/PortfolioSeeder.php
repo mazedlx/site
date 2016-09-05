@@ -140,7 +140,8 @@ class PortfolioSeeder extends Seeder
         Portfolio::create([
             'title' => 'Medientransparenz-Datenbank',
             'description' => '
-                Projekt für die AK Wien: Webapplikation für die Erfassung und Verwaltung von Ausgaben nach dem Medientransparenzgesetz.
+                Projekt für die AK Wien: Webapplikation für die Erfassung und Verwaltung von
+                Ausgaben nach dem Medientransparenzgesetz.
             ',
             'technical' => '
             <ul>
@@ -150,6 +151,21 @@ class PortfolioSeeder extends Seeder
             </ul>',
             'url' => 'http://www.bachelorette-party.at',
             'image' => 'folio10.png'
+        ]);
+
+                Portfolio::create([
+            'title' => 'Elektronischer Fragebogen',
+            'description' => '
+                Projekt für die AK Wien: Elektronischer Fragebogen zum Thema "Qualität des Arbeitslebens
+                der österreichischen ArbeitnehmerInnen.
+            ',
+            'technical' => '
+            <ul>
+                <li>CodeIgniter</li>
+                <li>MySQL</li>
+            </ul>',
+            'url' => 'http://www.bachelorette-party.at',
+            'image' => 'folio11.png'
         ]);
     }
 }
