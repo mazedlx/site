@@ -37,5 +37,5 @@
     @include('page.handmade')
     @include('page.contact')
     @include('page.footer')
-</body>
+    </body>
 </html>
