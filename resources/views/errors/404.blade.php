@@ -36,7 +36,7 @@
         <br>
         <div class="container">
             <div class="jumbotron">
-                <h1>404 - Seite nicht gefunden.</h1>
+                <h1>404 - Die Seite existiert leider nicht. </h1>
                 <a href="https://mazedlx.net" class="btn btn-lg btn-primary">Zur&uuml;ck zur Seite</a>
             </div>
         </div>
