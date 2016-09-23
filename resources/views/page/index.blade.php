@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="mazedlx.net | Webproductions">
         <meta name="author" content="mazedlx.net | Christian Leo-Pernold">
+        <meta http-equiv="expires" content="3600">
         <title>mazedlx.net webproductions</title>
         <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-touch-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-touch-icon-60x60.png">
