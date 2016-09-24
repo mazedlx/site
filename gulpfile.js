@@ -1,14 +1,20 @@
 var elixir = require('laravel-elixir');
 
 elixir(function(mix) {
+    /* copy fonts */
     mix.copy('bower_components/bootstrap/dist/fonts', 'public/fonts');
     mix.copy('bower_components/icomoon-bower/fonts', 'public/css/fonts');
     mix.copy('bower_components/font-awesome/fonts', 'public/fonts');
+
+    /* copy js */
     mix.copy('bower_components/html5shiv/dist/html5shiv.js', 'public/js');
     mix.copy('bower_components/respond/src/respond.js', 'public/js');
+
+    /* copy images */
     mix.copy('resources/assets/images', 'public/images');
     mix.copy('resources/assets/images/favicons', 'public/images/favicons');
 
+    /* css */
     mix.styles([
         '../../../bower_components/bootstrap/dist/css/bootstrap.css',
         '../../../bower_components/icomoon-bower/style.css',
@@ -17,6 +23,7 @@ elixir(function(mix) {
         'main.css'
     ], 'public/css/app.css');
 
+    /* js */
     mix.scripts([
         '../../../bower_components/jquery/dist/jquery.js',
         '../../../bower_components/bootstrap/dist/js/bootstrap.js',
