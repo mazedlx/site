@@ -149,11 +149,11 @@ class PortfolioSeeder extends Seeder
                 <li>MySQL</li>
                 <li>Bootstrap 3</li>
             </ul>',
-            'url' => 'http://www.bachelorette-party.at',
+            'url' => '',
             'image' => 'folio10.png'
         ]);
 
-                Portfolio::create([
+        Portfolio::create([
             'title' => 'Elektronischer Fragebogen',
             'description' => '
                 Projekt für die AK Wien: Elektronischer Fragebogen zum Thema "Qualität des Arbeitslebens
@@ -164,8 +164,38 @@ class PortfolioSeeder extends Seeder
                 <li>CodeIgniter</li>
                 <li>MySQL</li>
             </ul>',
-            'url' => 'http://www.bachelorette-party.at',
+            'url' => '',
             'image' => 'folio11.png'
+        ]);
+
+        Portfolio::create([
+            'title' => 'Relaunch benedict.at & benedict-swiss.at',
+            'description' => '
+                Projekt in Zusammenarbeit mit S-MGMT, Relaunch der Websites der Benedict GmbH und der Benedict Swiss AG".
+            ',
+            'technical' => '
+            <ul>
+                <li>PyroCMS</li>
+                <li>Bootstrap</li>
+                <li>SASS</li>
+            </ul>',
+            'url' => '',
+            'image' => 'folio12.png'
+        ]);
+
+        Portfolio::create([
+            'title' => 'Broschürenverwaltung für die AK Wien',
+            'description' => '
+                Projekt für die AK Wien, Software für die Verwaltung und Bestellung von Broschüren".
+            ',
+            'technical' => '
+            <ul>
+                <li>Laravel 5.4</li>
+                <li>VueJS 2.0</li>
+                <li>MySQL</li>
+            </ul>',
+            'url' => '',
+            'image' => 'folio13.png'
         ]);
     }
 }
