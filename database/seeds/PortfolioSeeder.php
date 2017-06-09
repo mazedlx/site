@@ -1,4 +1,4 @@
-<?php
+    <?php
 
 use App\Portfolio;
 use Illuminate\Database\Seeder;
@@ -179,7 +179,7 @@ class PortfolioSeeder extends Seeder
                 <li>Bootstrap</li>
                 <li>SASS</li>
             </ul>',
-            'url' => '',
+            'url' => 'http://www.benedict.at',
             'image' => 'folio12.png'
         ]);
 
