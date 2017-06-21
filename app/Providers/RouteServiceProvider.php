@@ -2,8 +2,12 @@
 
 namespace App\Providers;
 
-use Illuminate\Support\Facades\Route;
+use App\Article;
+use App\Company;
+use App\Customer;
+use App\Orderdetail;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
+use Illuminate\Support\Facades\Route;
 
 class RouteServiceProvider extends ServiceProvider
 {
@@ -23,7 +27,17 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        Route::bind('article', function ($id) {
+            return Article::withTrashed()->where('id', '=', $id)->first();
+        });
+
+        Route::bind('company', function ($id) {
+            return Company::withTrashed()->where('id', '=', $id)->first();
+        });
+
+        Route::bind('customer', function ($id) {
+            return Customer::withTrashed()->where('id', '=', $id)->first();
+        });
 
         parent::boot();
     }
@@ -35,9 +49,9 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function map()
     {
-        $this->mapWebRoutes();
-
         $this->mapApiRoutes();
+
+        $this->mapWebRoutes();
 
         //
     }
