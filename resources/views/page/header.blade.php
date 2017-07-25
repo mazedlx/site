@@ -1,6 +1,5 @@
 <div id="home" name="home">
             <header class="clearfix">
-                <h1><i class="fa fa-flask" aria-hidden="true"></i></h1>
                 <p>mazedlx.net webproductions</p>
             </header>
         </div>
