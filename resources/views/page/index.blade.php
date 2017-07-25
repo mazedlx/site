@@ -20,23 +20,28 @@
         <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#5bbad5">
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
-        <link href="css/app.css" rel="stylesheet">
         <link href='//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
         <link href='//fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-          <script src="js/html5shiv.js"></script>
-          <script src="js/respond.min.js"></script>
-          <![endif]-->
+        <link href="{{ mix('css/app.css') }}" rel="stylesheet">
     </head>
+
     <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
-    @include('page.nav')
-    @include('page.header')
-    @include('page.about')
-    @include('page.services')
-    @include('page.portfolio')
-    @include('page.handmade')
-    @include('page.contact')
-    @include('page.footer')
+
+        @include('page.nav')
+
+        @include('page.header')
+
+        @include('page.about')
+
+        @include('page.services')
+
+        @include('page.portfolio')
+
+        @include('page.handmade')
+
+        @include('page.contact')
+
+        @include('page.footer')
+
     </body>
 </html>
