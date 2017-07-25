@@ -38,7 +38,7 @@
                 <li>PHP</li>
                 <li>JavaScript</li>
                 <li>HTML</li>
-                <li>CSS</li>
+                <li>CSS / SASS / LESS</li>
             </ul>
         </div>
         <div class="col-lg-6">
@@ -53,7 +53,7 @@
             <ul class="list-unstyled">
                 <li>Composer</li>
                 <li>NPM</li>
-                <li>Bower</li>
+                <li>Yarn</li>
             </ul>
             <h2>Frameworks</h2>
             <ul class="list-unstyled">
@@ -63,6 +63,7 @@
                         <li>Laravel</li>
                         <li>CodeIgniter</li>
                         <li>WordPress</li>
+                        <li>OctoberCMS</li>
                     </ul>
                 </li>
                 <li>
@@ -71,13 +72,15 @@
                         <li>JQuery</li>
                         <li>JQuery UI</li>
                         <li>VueJS</li>
-                        <li>Node.js</li>
+                        <li>NodeJS</li>
                     </ul>
                 </li>
                 <li>
-                    HTML
+                    HTML/CSS
                     <ul>
                         <li>Bootstrap</li>
+                        <li>Bulma</li>
+                        <li>Pure.css</li>
                     </ul>
 
                 </li>
