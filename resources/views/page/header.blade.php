@@ -1,4 +1,4 @@
-<div id="home" name="home">
+        <div id="home" name="home">
             <header class="clearfix">
                 <p>mazedlx.net webproductions</p>
             </header>

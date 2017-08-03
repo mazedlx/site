@@ -1,3 +1,5 @@
-    window.$ = window.jQuery = require('jquery');
+window.Vue = require('vue');
 
-    require('bootstrap-sass');
+window.$ = window.jQuery = require('jquery');
+
+require('bootstrap-sass');
