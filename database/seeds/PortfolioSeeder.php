@@ -13,6 +13,7 @@ class PortfolioSeeder extends Seeder
     public function run()
     {
         Portfolio::create([
+            'category_id' => 1,
             'title' => 'Arbeitswelt & Schule',
             'description' => '
                 Projekt für die Arbeiterkammer Wien, Niederösterreich, Oberösterreich, Salzburg und Steiermark.
@@ -24,10 +25,11 @@ class PortfolioSeeder extends Seeder
                     <li>Bootstrap 3</li>
                 </ul>',
             'url' => 'https://aws.arbeiterkammer.at/',
-            'image' => 'folio01.png'
+            'image' => '01.png'
         ]);
 
         Portfolio::create([
+            'category_id' => 1,
             'title' => 'Krankenhausbewertung Österreich',
             'description' => 'krankenhausbewertung.at - Die Plattform für Krankenhausbwertungen in Österreich.',
             'technical' => '
@@ -37,18 +39,20 @@ class PortfolioSeeder extends Seeder
                     <li>Bootstrap 3</li>
                 </ul>',
             'url' => 'http://www.krankenhausbewertung.at/',
-            'image' => 'folio02.png'
+            'image' => '02.png'
         ]);
 
         Portfolio::create([
+            'category_id' => 1,
             'title' => 'Haarstudio Verena Leeb',
             'description' => 'Haarstudio Verena Leeb',
             'technical' => 'WordPress 4.2',
             'url' => 'http://www.leeb-haarstudio.at/wordpress/',
-            'image' => 'folio03.png'
+            'image' => '03.png'
         ]);
 
         Portfolio::create([
+            'category_id' => 1,
             'title' => 'L14 - Onlinenanmeldung',
             'description' => 'Projekt für die Arbeiterkammer Wien, Abwicklung der
                                 Anmeldungen für die L14 Bildungs- und Berufinformationstage.',
@@ -60,10 +64,11 @@ class PortfolioSeeder extends Seeder
                 </ul>
             ',
             'url' => '',
-            'image' => 'folio04.png'
+            'image' => '04.png'
         ]);
 
         Portfolio::create([
+            'category_id' => 1,
             'title' => 'AK Fonds - Onlinenanmeldung',
             'description' => 'Projekt für die Arbeiterkammer Wien, Onlineanmeldesystem für
                                 Theodor-Körner-Fonds / Edith-Saurer-Fonds / Geschichtswettbewerb
@@ -76,10 +81,11 @@ class PortfolioSeeder extends Seeder
                 </ul>
             ',
             'url' => 'http://fonds.arbeiterkammer.at/',
-            'image' => 'folio05.png'
+            'image' => '05.png'
         ]);
 
         Portfolio::create([
+            'category_id' => 1,
             'title' => 'Paul Mies Baum und Gartenpflege',
             'description' => 'Firmenwebsite für Paul Mies Baum und Gartenpflege & Custom CMS.',
             'technical' => '
@@ -90,10 +96,11 @@ class PortfolioSeeder extends Seeder
                 </ul>
             ',
             'url' => 'http://www.paulmies.at/',
-            'image' => 'folio06.png'
+            'image' => '06.png'
         ]);
 
         Portfolio::create([
+            'category_id' => 1,
             'title' => 'IT Support für Agnes Streissler-Führer ',
             'description' => '
                 IT-Support für Agnes Streissler-Führer
@@ -105,10 +112,11 @@ class PortfolioSeeder extends Seeder
                     <li>Netzwerktechnik</li>
                 </ul>',
             'url' => '',
-            'image' => 'folio07.png'
+            'image' => '07.png'
         ]);
 
         Portfolio::create([
+            'category_id' => 1,
             'title' => 'AK Arbeitsjubilare - Onlineanmeldung',
             'description' => '
                 Projekt für die AK Wien. Online-Anmeldesystem mit Saalplanbuchung.
@@ -120,10 +128,11 @@ class PortfolioSeeder extends Seeder
                 <li>Bootstrap 3</li>
             </ul>',
             'url' => '',
-            'image' => 'folio08.png'
+            'image' => '08.png'
         ]);
 
         Portfolio::create([
+            'category_id' => 1,
             'title' => 'Bachelorette Party',
             'description' => '
                 WordPress-Setup und WordPress-Theme nach eigenen Wünschen.
@@ -134,10 +143,11 @@ class PortfolioSeeder extends Seeder
                 <li>SASS</li>
             </ul>',
             'url' => 'http://www.bachelorette-party.at',
-            'image' => 'folio09.png'
+            'image' => '09.png'
         ]);
 
         Portfolio::create([
+            'category_id' => 1,
             'title' => 'Medientransparenz-Datenbank',
             'description' => '
                 Projekt für die AK Wien: Webapplikation für die Erfassung und Verwaltung von
@@ -150,10 +160,11 @@ class PortfolioSeeder extends Seeder
                 <li>Bootstrap 3</li>
             </ul>',
             'url' => '',
-            'image' => 'folio10.png'
+            'image' => '10.png'
         ]);
 
         Portfolio::create([
+            'category_id' => 1,
             'title' => 'Elektronischer Fragebogen',
             'description' => '
                 Projekt für die AK Wien: Elektronischer Fragebogen zum Thema "Qualität des Arbeitslebens
@@ -165,10 +176,11 @@ class PortfolioSeeder extends Seeder
                 <li>MySQL</li>
             </ul>',
             'url' => '',
-            'image' => 'folio11.png'
+            'image' => '11.png'
         ]);
 
         Portfolio::create([
+            'category_id' => 1,
             'title' => 'Relaunch benedict.at & benedict-swiss.at',
             'description' => '
                 Projekt in Zusammenarbeit mit S-MGMT, Relaunch der Websites der Benedict GmbH und der Benedict Swiss AG".
@@ -180,10 +192,11 @@ class PortfolioSeeder extends Seeder
                 <li>SASS</li>
             </ul>',
             'url' => 'http://www.benedict.at',
-            'image' => 'folio12.png'
+            'image' => '12.png'
         ]);
 
         Portfolio::create([
+            'category_id' => 1,
             'title' => 'Broschürenverwaltung für die AK Wien',
             'description' => '
                 Projekt für die AK Wien, Software für die Verwaltung und Bestellung von Broschüren".
@@ -195,7 +208,7 @@ class PortfolioSeeder extends Seeder
                 <li>MySQL</li>
             </ul>',
             'url' => '',
-            'image' => 'folio13.png'
+            'image' => '13.png'
         ]);
     }
 }

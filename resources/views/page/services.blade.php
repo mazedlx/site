@@ -1,90 +1,50 @@
-<section class="section-divider textdivider divider1">
-    <div class="container" id="services">
-        <h1>LEISTUNGEN</h1>
-        <hr>
-        <p>Umfangreich. Professionell.</p>
-    </div><!-- container -->
-</section><!-- section -->
-
-
-    <!-- ==== SERVICES ==== -->
-    <div class="container"  name="services">
-        <br>
-        <br>
+<section id="services">
+    <div class="container">
         <div class="row">
-
-        <div class="col-lg-6">
-            <h2>Websites &amp; Webapplikationen</h2>
-            <ul class="list-unstyled">
-                <li>Von der Konzeption bis zur Implementierung</li>
-            </ul>
-            <h2>Social Media</h2>
-            Ihr Auftritt bei
-            <ul class="list-unstyled">
-                <li>Facebook</li>
-                <li>YouTube</li>
-                <li>Twitter</li>
-                <li>Google+</li>
-            </ul>
-            <h2>Support</h2>
-            <ul class="list-unstyled">
-                <li>Windows / Client &amp; Server</li>
-                <li>Linux / Client &amp; Server</li>
-                <li>OS X / Client &amp; Server</li>
-                <li>Netzwerk &amp; Dienste</li>
-            </ul>
-            <h2>Sprachen</h2>
-            <ul class="list-unstyled">
-                <li>PHP</li>
-                <li>JavaScript</li>
-                <li>HTML</li>
-                <li>CSS / SASS / LESS</li>
-            </ul>
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Leistungen</h2>
+                <hr class="primary">
+            </div>
         </div>
-        <div class="col-lg-6">
-            <h2>Datenbanken</h2>
-            <ul class="list-unstyled">
-                <li>MySQL</li>
-                <li>PostgreSQL</li>
-                <li>MS SQL</li>
-                <li>Oracle</li>
-            </ul>
-            <h2>Dependency &amp; Package Management</h2>
-            <ul class="list-unstyled">
-                <li>Composer</li>
-                <li>NPM</li>
-                <li>Yarn</li>
-            </ul>
-            <h2>Frameworks</h2>
-            <ul class="list-unstyled">
-                <li>
-                    PHP
-                    <ul>
-                        <li>Laravel</li>
-                        <li>CodeIgniter</li>
-                        <li>WordPress</li>
-                        <li>OctoberCMS</li>
-                    </ul>
-                </li>
-                <li>
-                    JavaScript
-                    <ul>
-                        <li>JQuery</li>
-                        <li>JQuery UI</li>
-                        <li>VueJS</li>
-                        <li>NodeJS</li>
-                    </ul>
-                </li>
-                <li>
-                    HTML/CSS
-                    <ul>
-                        <li>Bootstrap</li>
-                        <li>Bulma</li>
-                        <li>Pure.css</li>
-                    </ul>
-
-                </li>
-            </ul>
-        </div><!-- col-lg -->
-    </div><!-- row -->
-</div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box">
+                    <i class="fa fa-4x fa-code text-primary sr-icons"></i>
+                    <h3>Webdevelopment</h3>
+                    <p class="text-muted">
+                        Wir erstellen moderne Anwendungen, responsive und mobile-first.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box">
+                    <i class="fa fa-4x fa-wrench text-primary sr-icons"></i>
+                    <h3>Support</h3>
+                    <p class="text-muted">
+                        Ihr PC/Mac macht Mätzchen? Wir helfen, rasch und unkompliziert.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box">
+                    <i class="fa fa-4x fa-server text-primary sr-icons"></i>
+                    <h3>Server</h3>
+                    <p class="text-muted">
+                        Sie wollen Ihr Hosting selbst in die Hand nehmen? Wir beraten Sie gerne und richten ihre Server ein.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box">
+                    <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
+                    <h3>Mit Liebe gemacht</h3>
+                    <p class="text-muted">
+                        0815? Nicht bei uns! Wir kreieren IHR Produkt.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

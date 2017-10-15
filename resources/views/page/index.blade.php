@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="de">
-    @include('page.head')
+@include('page.head')
+<body id="page-top">
+    <div id="app">
 
-    <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
-        <div id="app">
-            @include('page.nav')
+        @include('page.nav')
 
-            @include('page.header')
+        @include('page.header')
 
-            @include('page.about')
+        @include('page.about')
 
-            @include('page.services')
+        @include('page.services')
 
-            @include('page.portfolio')
+        @include('page.portfolio')
 
-            @include('page.handmade')
+        @include('page.contact')
 
-            @include('page.contact')
+        @include('page.imprint')
 
-            @include('page.footer')
-        </div>
-    </body>
+        @include('page.copyright')
+
+    </div>
+    @include('page.footer')
+</body>
 </html>
