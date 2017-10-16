@@ -8,7 +8,7 @@
                     Egal ob Sie eine Website brauchen, oder einen Auftritt bei Facebook, einen Webshop oder etwas
                     gänzlich anderes - wir haben was Sie brauchen.
                 </p>
-                <a class="btn btn-default btn-xl js-scroll-trigger" href="#services">Kontaktieren Sie uns!</a>
+                <a class="btn btn-default btn-xl js-scroll-trigger" href="#services">Unsere Leistungen</a>
             </div>
         </div>
     </div>
