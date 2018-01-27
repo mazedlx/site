@@ -215,7 +215,7 @@ class PortfolioSeeder extends Seeder
             'category_id' => 1,
             'title' => 'Terminverwaltung für das Vokalensemble der Dommusik Wien',
             'description' => '
-                Projekt für das Vokalensemble der Dommusik Wien um Proben- und Konzertorganisation zu vereinfachenn.
+                Projekt für das Vokalensemble der Dommusik Wien um Proben- und Konzertorganisation zu vereinfachen.
             ',
             'technical' => '
             <ul>
