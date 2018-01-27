@@ -8,6 +8,7 @@
                 </div>
                 <div class="project-name">
                     {{ $portfolio->title }}
+                    <hr>
                     {!! $portfolio->description !!}
                 </div>
             </div>
