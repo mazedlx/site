@@ -210,5 +210,21 @@ class PortfolioSeeder extends Seeder
             'url' => '',
             'image' => '13.png'
         ]);
+
+        Portfolio::create([
+            'category_id' => 1,
+            'title' => 'Terminverwaltung für das Vokalensemlbe der Dommusik Wien',
+            'description' => '
+                Terminverwaltung für das Vokalensemlbe der Dommusik Wien
+            ',
+            'technical' => '
+            <ul>
+                <li>Laravel 5.5</li>
+                <li>Tailwind CSS</li>
+                <li>MySQL</li>
+            <ul>',
+            'url' => '',
+            'image' => '14.png',
+        ]);
     }
 }
