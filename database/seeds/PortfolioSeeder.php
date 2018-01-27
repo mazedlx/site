@@ -100,7 +100,7 @@ class PortfolioSeeder extends Seeder
         ]);
 
         Portfolio::create([
-            'category_id' => 1,
+            'category_id' => 2,
             'title' => 'IT Support für Agnes Streissler-Führer ',
             'description' => '
                 IT-Support für Agnes Streissler-Führer
@@ -215,7 +215,7 @@ class PortfolioSeeder extends Seeder
             'category_id' => 1,
             'title' => 'Terminverwaltung für das Vokalensemble der Dommusik Wien',
             'description' => '
-                Terminverwaltung für das Vokalensemble der Dommusik Wien
+                Projekt für das Vokalensemble der Dommusik Wien um Proben- und Konzertorganisation zu vereinfachenn.
             ',
             'technical' => '
             <ul>
