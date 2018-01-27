@@ -8,7 +8,7 @@
                 </div>
                 <div class="project-name">
                     {{ $portfolio->title }}
-                    {{ $portfolio->description }}
+                    {!! $portfolio->description !!}
                 </div>
             </div>
         </div>
