@@ -10,6 +10,8 @@
                     {{ $portfolio->title }}
                     <hr>
                     {!! $portfolio->description !!}
+                    <hr>
+                    {!! $portfolio->technical !!}
                 </div>
             </div>
         </div>
