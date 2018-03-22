@@ -34,11 +34,12 @@ class PortfolioSeeder extends Seeder
             'description' => 'krankenhausbewertung.at - Die Plattform für Krankenhausbwertungen in Österreich.',
             'technical' => '
                 <ul>
-                    <li>CodeIgniter 3</li>
+                    <li>Laravel 5.6</li>
                     <li>MySQL</li>
-                    <li>Bootstrap 3</li>
+                    <li>TailwindCSS</li>
+                    <li>VueJS 2.0</li>
                 </ul>',
-            'url' => 'http://www.krankenhausbewertung.at/',
+            'url' => 'https://www.krankenhausbewertung.at/',
             'image' => '02.png'
         ]);
 
