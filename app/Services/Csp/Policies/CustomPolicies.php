@@ -31,10 +31,10 @@ class CustomPolicies extends Policy
             ->addDirective(Directive::DEFAULT, 'self')
             ->addDirective(Directive::FORM_ACTION, 'self')
             ->addDirective(Directive::IMG, 'self')
+            ->addDirective(Directive::IMG, 'data:')
             ->addDirective(Directive::MEDIA, 'self')
             ->addDirective(Directive::OBJECT, 'self')
             ->addDirective(Directive::SCRIPT, 'self')
-            ->addDirective(Directive::SCRIPT, 'unsafe-eval')
             ->addDirective(Directive::FONT, 'self')
             ->addDirective(Directive::STYLE, 'self');
 

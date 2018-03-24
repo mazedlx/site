@@ -5,4 +5,5 @@
     <meta name="author" content="mazedlx.net | Christian Leo-Pernold">
     <title>mazedlx.net webproductions</title>
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+    <script defer src="{{ mix('js/app.js') }}"></script>
 </head>
