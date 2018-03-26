@@ -8,7 +8,7 @@
                 Von der Konzeption bis zur Implementierung. Alles aus einer Hand. Und um Webserver, Datenbanken und andere
                 schwarze Magie kümmern wir uns natürlich auch.
             </p>
-            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#contact">Kontaktieren Sie uns!</a>
+            {{-- <a class="btn btn-primary btn-xl js-scroll-trigger" href="#contact">Kontaktieren Sie uns!</a> --}}
         </div>
     </div>
 </header>

@@ -21,9 +21,9 @@
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box">
                     <i class="fa fa-4x fa-wrench text-primary sr-icons"></i>
-                    <h3>Support</h3>
+                    <h3>Optimizing</h3>
                     <p class="text-muted">
-                        Ihr PC/Mac macht Mätzchen? Wir helfen, rasch und unkompliziert.
+                        Ihre bestehende Webapplikation benötigt ein Facelift? Ihr Website lädt zu langsam? Wir helfen bei er Optimierung.
                     </p>
                 </div>
             </div>
