@@ -7,7 +7,7 @@
                 <div id="contact" class="h-screen">
                     <div class="text-4xl py-4 text-right font-serif">Kontakt</div>
                     <div class="flex flex-col">
-                        <p class="text-xl leading-loose text-justify font-serif">
+                        <p class="text-xl leading-loose  font-serif">
                             Danke für Ihre Nachricht!
                             <a href="/#contact">Hier geht es zurück</a>
                         </p>

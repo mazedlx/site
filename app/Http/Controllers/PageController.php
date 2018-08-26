@@ -14,7 +14,8 @@ class PageController extends Controller
      */
     public function __invoke()
     {
-        return view('page.index')
-            ->with('portfolios', Portfolio::all());
+        return view('page.index', [
+            'portfolios' => Portfolio::all(),
+        ]);
     }
 }
