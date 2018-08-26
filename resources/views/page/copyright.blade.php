@@ -1,11 +1,5 @@
-<section id="copyright">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 mx-auto text-center">
-                <p>
-                    Crafted by <a href="https://mazedlx.net">mazedlx.net</a> - &copy; {{ date('Y') }}
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
+<div id="copyright">
+    <p class="text-center font-serif">
+        Crafted by <a href="https://mazedlx.net" class="text-blue-light">mazedlx.net webproductions</a> - &copy; {{ date('Y') }}
+    </p>
+</div>

@@ -1,35 +1,27 @@
-<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-    <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">mazedlx.net webproductions</a>
-        <button
-            class="navbar-toggler navbar-toggler-right"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarResponsive"
-            aria-controls="navbarResponsive"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-        >
-            <span class="navbar-toggler-icon"></span>
+<nav class="flex flex-col md:flex-row justify-end pb-4">
+    <div class="py-2 border-b-2 border-transparent w-2/3 text-2xl font-serif">
+        mazedlx.net webproductions
+    </div>
+    <div class="block md:hidden">
+        <button id="nav_btn" type="button">
+            @svg('menu', 'h-6 w-6 fill-current ')
         </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#about">Mission</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#services">Leistungen</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#contact">Kontakt</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#imprint">Impressum</a>
-                </li>
-            </ul>
+    </div>
+    <div class="hidden md:flex md:flex-row md:justify-around md:w-2/3" id="nav_links">
+        <div class="flex-auto py-2 text-center fade-in">
+            <a class="no-underline text-grey-darker text-xl font-serif" href="#services">Leistungen</a>
+        </div>
+        <div class="flex-auto py-2 text-center fade-in">
+            <a class="no-underline text-grey-darker text-xl font-serif" href="#portfolio">Referenzen</a>
+        </div>
+        <div class="flex-auto py-2 text-center fade-in">
+            <a class="no-underline text-grey-darker text-xl font-serif" href="#contact">Kontakt</a>
+        </div>
+        <div class="flex-auto py-2 text-center fade-in">
+            <a class="no-underline text-grey-darker text-xl font-serif" href="#imprint">Impressum</a>
+        </div>
+        <div class="flex-auto py-2 text-center fade-in">
+            <a class="no-underline text-grey-darker text-xl font-serif" href="https://blog.mazedlx.net/" target="_blank">Blog</a>
         </div>
     </div>
 </nav>

@@ -1,20 +1,6 @@
-<section class="bg-primary" id="portfolio">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 mx-auto text-center">
-                <h2 class="section-heading text-white">Portfolio</h2>
-                <hr class="light">
-                <p class="text-faded">
-
-                </p>
-            </div>
-        </div>
+<div id="portfolio" class="pb-8">
+    <div class="text-4xl py-4 text-right font-serif">Referenzen</div>
+    <div class="flex flex-col md:flex-row flex-wrap justify-between">
+    @each('page._portfolio', $portfolios, 'portfolio')
     </div>
-    <div class="container-fluid">
-        <div class="row no-gutter popup-gallery">
-            @foreach ($portfolios as $portfolio)
-                @include('page._portfolio')
-            @endforeach
-        </div>
-    </div>
-</section>
+</div>

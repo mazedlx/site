@@ -1,14 +1,10 @@
-<!DOCTYPE html>
-<html lang="de">
-@include('page.head')
-<body id="page-top">
-    <div id="app">
+@extends('layouts.page')
+
+@section('content')
+<div id="app" class="page-background">
+    <div class="container wrapper">
 
         @include('page.nav')
-
-        @include('page.header')
-
-        @include('page.about')
 
         @include('page.services')
 
@@ -21,6 +17,5 @@
         @include('page.copyright')
 
     </div>
-    @include('page.footer')
-</body>
-</html>
+</div>
+@endsection

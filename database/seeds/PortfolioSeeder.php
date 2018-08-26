@@ -25,7 +25,7 @@ class PortfolioSeeder extends Seeder
                     <li>Bootstrap 3</li>
                 </ul>',
             'url' => 'https://aws.arbeiterkammer.at/',
-            'image' => '01.png'
+            'image' => '001.png'
         ]);
 
         Portfolio::create([
@@ -40,7 +40,7 @@ class PortfolioSeeder extends Seeder
                     <li>VueJS 2.0</li>
                 </ul>',
             'url' => 'https://www.krankenhausbewertung.at/',
-            'image' => '02.png'
+            'image' => '002.png'
         ]);
 
         Portfolio::create([
@@ -49,7 +49,7 @@ class PortfolioSeeder extends Seeder
             'description' => 'Haarstudio Verena Leeb',
             'technical' => 'WordPress 4.2',
             'url' => 'http://www.leeb-haarstudio.at/wordpress/',
-            'image' => '03.png'
+            'image' => '003.png'
         ]);
 
         Portfolio::create([
@@ -65,7 +65,7 @@ class PortfolioSeeder extends Seeder
                 </ul>
             ',
             'url' => '',
-            'image' => '04.png'
+            'image' => '004.png'
         ]);
 
         Portfolio::create([
@@ -82,7 +82,7 @@ class PortfolioSeeder extends Seeder
                 </ul>
             ',
             'url' => 'http://fonds.arbeiterkammer.at/',
-            'image' => '05.png'
+            'image' => '005.png'
         ]);
 
         Portfolio::create([
@@ -97,7 +97,7 @@ class PortfolioSeeder extends Seeder
                 </ul>
             ',
             'url' => 'http://www.paulmies.at/',
-            'image' => '06.png'
+            'image' => '006.png'
         ]);
 
         Portfolio::create([
@@ -113,7 +113,7 @@ class PortfolioSeeder extends Seeder
                     <li>Netzwerktechnik</li>
                 </ul>',
             'url' => '',
-            'image' => '07.png'
+            'image' => '007.png'
         ]);
 
         Portfolio::create([
@@ -129,7 +129,7 @@ class PortfolioSeeder extends Seeder
                 <li>Bootstrap 3</li>
             </ul>',
             'url' => '',
-            'image' => '08.png'
+            'image' => '008.png'
         ]);
 
         Portfolio::create([
@@ -144,7 +144,7 @@ class PortfolioSeeder extends Seeder
                 <li>SASS</li>
             </ul>',
             'url' => 'http://www.bachelorette-party.at',
-            'image' => '09.png'
+            'image' => '009.png'
         ]);
 
         Portfolio::create([
@@ -161,7 +161,7 @@ class PortfolioSeeder extends Seeder
                 <li>Bootstrap 3</li>
             </ul>',
             'url' => '',
-            'image' => '10.png'
+            'image' => '010.png'
         ]);
 
         Portfolio::create([
@@ -177,7 +177,7 @@ class PortfolioSeeder extends Seeder
                 <li>MySQL</li>
             </ul>',
             'url' => '',
-            'image' => '11.png'
+            'image' => '011.png'
         ]);
 
         Portfolio::create([
@@ -193,7 +193,7 @@ class PortfolioSeeder extends Seeder
                 <li>SASS</li>
             </ul>',
             'url' => 'http://www.benedict.at',
-            'image' => '12.png'
+            'image' => '012.png'
         ]);
 
         Portfolio::create([
@@ -209,7 +209,7 @@ class PortfolioSeeder extends Seeder
                 <li>MySQL</li>
             </ul>',
             'url' => '',
-            'image' => '13.png'
+            'image' => '013.png'
         ]);
 
         Portfolio::create([
@@ -225,7 +225,7 @@ class PortfolioSeeder extends Seeder
                 <li>MySQL</li>
             <ul>',
             'url' => '',
-            'image' => '14.png',
+            'image' => '014.png',
         ]);
     }
 }

@@ -1,2 +1,5 @@
 <?php
-Route::get('/', 'PageController@index');
+
+Route::get('/', 'PageController');
+
+Route::post('/contact', 'ContactController');

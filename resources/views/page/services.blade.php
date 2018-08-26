@@ -1,50 +1,25 @@
-<section id="services">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading">Leistungen</h2>
-                <hr class="primary">
-            </div>
-        </div>
+<div id="services" class="pb-8">
+    <div class="text-4xl py-4 text-right font-serif">Leistungen</div>
+    <div>
+        <h3 class="text-2xl font-normal font-serif">Webdevelopment</h3>
+        <p class="text-xl leading-loose text-justify font-serif">
+            Sie möchten eine Website für Ihr Unternehmen? Oder eine Webanwendung um einen Prozess zu digitalisieren? 08/15 gefällt Ihnen gar nicht? Dann sind Sie bei uns richtig!
+            Wir fertigen Ihre Website von Hand. Und Ihren Blog. Und Ihr CMS. Und Ihre supercustomizable Webapplikation. Mobile-first und responsive. Von der Konzeption bis zur Implementierung. Bei uns gibt es alles aus einer Hand. Und um Webserver, Datenbanken, Backups, Hosting und andere schwarze Magie kümmern wir uns natürlich auch.
+            Sie haben die Idee, wir den passenden Technologie-Stack.
+        </p>
+
+        <hr class="border-b border-grey my-6">
+
+        <h3 class="text-2xl font-normal font-serif">Mobile und Desktop Applikationen</h3>
+        <p class="text-xl leading-loose text-justify font-serif">
+            Sie möchten eine lässige Smartphone-App? Oder ihre Webanwendung auch als native Desktop- oder Mobile-Anwendung? Wir beraten Sie gerne!
+        </p>
+
+        <hr class="border-b border-grey my-6">
+
+        <h3 class="text-2xl font-normal font-serif">Trainings</h3>
+        <p class="text-xl leading-loose text-justify font-serif">
+            Sie möchten Ihr Developer-Team auf den neuesten Stand bringen? Wir bieten Trainings im Bereich PHP (zB Testing mit PHPUnit) und Javascript (zB ES6,7,8) an.
+        </p>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-md-6 text-center">
-                <div class="service-box">
-                    <i class="fa fa-4x fa-code text-primary sr-icons"></i>
-                    <h3>Webdevelopment</h3>
-                    <p class="text-muted">
-                        Wir erstellen moderne Anwendungen, responsive und mobile-first.
-                    </p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 text-center">
-                <div class="service-box">
-                    <i class="fa fa-4x fa-wrench text-primary sr-icons"></i>
-                    <h3>Optimizing</h3>
-                    <p class="text-muted">
-                        Ihre bestehende Webapplikation benötigt ein Facelift? Ihr Website lädt zu langsam? Wir helfen bei er Optimierung.
-                    </p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 text-center">
-                <div class="service-box">
-                    <i class="fa fa-4x fa-server text-primary sr-icons"></i>
-                    <h3>Server</h3>
-                    <p class="text-muted">
-                        Sie wollen Ihr Hosting selbst in die Hand nehmen? Wir beraten Sie gerne und richten ihre Server ein.
-                    </p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 text-center">
-                <div class="service-box">
-                    <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
-                    <h3>Mit Liebe gemacht</h3>
-                    <p class="text-muted">
-                        0815? Nicht bei uns! Wir kreieren IHR Produkt.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+</div>
