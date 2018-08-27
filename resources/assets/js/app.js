@@ -1,5 +1,5 @@
-import "babel-polyfill";
-import Vue from "vue/dist/vue.esm";
+// import "babel-polyfill";
+import Vue from "vue";
 
 import ContactForm from "./components/ContactForm.vue";
 
