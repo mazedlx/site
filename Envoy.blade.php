@@ -5,6 +5,7 @@
     php artisan down
     git stash
     git pull
+    composer update
     php artisan migrate:fresh --seed
     yarn prod
     php artisan up
