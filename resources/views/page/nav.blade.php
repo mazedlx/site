@@ -8,20 +8,23 @@
         </button>
     </div>
     <div class="hidden md:flex md:flex-row md:justify-around md:w-2/3" id="nav_links">
-        <div class="flex-auto py-2 text-center fade-in">
+        <div class="flex-auto py-2 px-1 text-center fade-in">
             <a class="no-underline text-grey-darker text-xl font-serif" href="#services">Leistungen</a>
         </div>
-        <div class="flex-auto py-2 text-center fade-in">
+        <div class="flex-auto py-2 px-1 text-center fade-in">
             <a class="no-underline text-grey-darker text-xl font-serif" href="#portfolio">Referenzen</a>
         </div>
-        <div class="flex-auto py-2 text-center fade-in">
+        <div class="flex-auto py-2 px-1 text-center fade-in">
             <a class="no-underline text-grey-darker text-xl font-serif" href="#contact">Kontakt</a>
         </div>
-        <div class="flex-auto py-2 text-center fade-in">
+        <div class="flex-auto py-2 px-1 text-center fade-in">
             <a class="no-underline text-grey-darker text-xl font-serif" href="#imprint">Impressum</a>
         </div>
-        <div class="flex-auto py-2 text-center fade-in">
+        <div class="flex-auto py-2 px-1 text-center fade-in">
             <a class="no-underline text-grey-darker text-xl font-serif" href="https://blog.mazedlx.net/" target="_blank">Blog</a>
+        </div>
+        <div class="flex-auto py-2 px-1 text-center fade-in">
+            <a class="no-underline text-grey-darker text-xl font-serif" href="https://github.com/mazedlx/" target="_blank">GitHub</a>
         </div>
     </div>
 </nav>
