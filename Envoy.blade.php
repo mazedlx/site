@@ -5,9 +5,8 @@
     php artisan down
     git stash
     git pull
-    composer update
+    composer update --no-dev
     php artisan migrate:fresh --seed
     yarn prod
     php artisan up
-    php artisan queue:work &!
 @endtask
