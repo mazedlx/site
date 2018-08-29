@@ -1,42 +1,42 @@
 <template>
-  <div v-if="done" class="pt-4 text-2xl text-center font-serif">
+  <div v-if="done" class="subheading text-center py-8">
     Vielen Dank für Ihre Nachricht! Wir melden uns in Kürze.
   </div>
   <form v-else action="/contact" method="POST" class="flex flex-col w-full">
-    <div class="flex flex-col py-2">
+    <div class="form-group">
         <input
           v-model="name"
           @input="clearError('name')"
           placeholder="Ihr Name"
           type="text"
-          class="text-xl font-serif w-full border bg-grey-lightest focus:bg-white focus:border-blue-light focus:outline-none p-4"
+          class="form-input"
           :class="{
             'border-red': errors['name']
           }"
           required
         >
-        <div v-if="errors['name']" class="text-red pt-2 text-lg">{{ errors['name'][0] }}</div>
+        <div v-if="errors['name']" class="form-error">{{ errors['name'][0] }}</div>
     </div>
-    <div class="flex flex-col py-2">
+    <div class="form-group">
         <input
           v-model="email"
           @input="clearError('email')"
           placeholder="Ihre E-Mail-Adressse"
           type="email"
-          class="text-xl font-serif w-full border bg-grey-lightest focus:bg-white focus:border-blue-light focus:outline-none p-4"
+          class="form-input"
           :class="{
             'border-red': errors['email']
           }"
           required
         >
-        <div v-if="errors['email']" class="text-red pt-2 text-lg">{{ errors['email'][0] }}</div>
+        <div v-if="errors['email']" class="form-error">{{ errors['email'][0] }}</div>
     </div>
-    <div class="flex flex-col py-2">
+    <div class="form-group">
       <textarea
         v-model="message"
         @input="clearError('message')"
         placeholder="Ihre Idee die Sie mit uns umsetzen möchten"
-        class="text-xl font-serif w-full border bg-grey-lightest focus:bg-white focus:border-blue-light focus:outline-none p-4"
+        class="form-input"
         :class="{
             'border-red': errors['message']
           }"
@@ -44,12 +44,12 @@
         cols="30"
         required
       ></textarea>
-      <div v-if="errors['message']" class="text-red pt-2 text-lg">{{ errors['message'][0] }}</div>
+      <div v-if="errors['message']" class="form-error">{{ errors['message'][0] }}</div>
     </div>
     <div class="flex justify-end">
       <button
         @click="sendMail"
-        class="text-xl text-blue-light font-serif px-4 py-2 border-4 border-blue-light rounded-full hover:bg-blue-light hover:text-white focus:outline-none"
+        class="btn"
         type="button"
         :disabled="loading"
       >

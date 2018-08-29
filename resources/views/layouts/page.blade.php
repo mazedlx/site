@@ -11,6 +11,6 @@
         <script defer src="{{ mix('js/app.js') }}"></script>
     </head>
     <body class="bg-white">
-    @yield('content')
+        @yield('content')
     </body>
 </html>

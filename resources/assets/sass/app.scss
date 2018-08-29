@@ -35,6 +35,7 @@
  * @import "components/buttons";
  * @import "components/forms";
  */
+@import "components/site";
 
 /**
  * This injects all of Tailwind's utility classes, generated based on your
@@ -60,41 +61,3 @@
  * @import "utilities/background-patterns";
  * @import "utilities/skew-transforms";
  */
-
-@keyframes fade {
-  0% {
-    @apply border border-t-0 border-l-0 border-r-0 border-b-2 border-transparent;
-  }
-  100% {
-    @apply border border-t-0 border-l-0 border-r-0 border-b-2 border-blue-light;
-  }
-}
-
-.fade-in:hover {
-  animation: fade 0.5s ease-in 0s 1 normal forwards;
-}
-
-.page-background {
-  @apply bg-grey-lighter h-full;
-  background-image: url(/img/header.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.wrapper {
-  @apply bg-grey-lightest border border-transparent mx-auto px-8 py-6;
-}
-
-.portfolio {
-  @apply flex justify-center items-end font-bold text-xl text-center h-64;
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-@for $i from 1 through 14 {
-  .portfolio-#{$i} {
-    background-image: url(/img/thumbnails/#{$i}.png);
-  }
-}

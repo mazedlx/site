@@ -693,6 +693,390 @@ table {
  * @import "components/forms";
  */
 
+.page-background {
+  background-color: #f1f5f8;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url(/img/header.png);
+}
+
+.wrapper {
+  background-color: #f8fafc;
+  border-width: 1px;
+  border-color: transparent;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.section {
+  padding-bottom: 2rem;
+}
+
+a {
+  color: #6cb2eb;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    border-width: 1px;
+    border-top-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 2px;
+    border-color: transparent;
+  }
+
+  100% {
+    border-width: 1px;
+    border-top-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 2px;
+    border-color: #6cb2eb;
+  }
+}
+
+@keyframes fade {
+  0% {
+    border-width: 1px;
+    border-top-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 2px;
+    border-color: transparent;
+  }
+
+  100% {
+    border-width: 1px;
+    border-top-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 2px;
+    border-color: #6cb2eb;
+  }
+}
+
+.fade-in:hover {
+  -webkit-animation: fade .5s ease-in 0s 1 normal forwards;
+          animation: fade .5s ease-in 0s 1 normal forwards;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-bottom: 1rem;
+}
+
+.nav-button {
+  display: block;
+}
+
+.nav-links {
+  display: none;
+}
+
+.nav-item {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  padding-left: .25rem;
+  padding-right: .25rem;
+  text-align: center;
+}
+
+.nav-item:hover {
+  -webkit-animation: fade .5s ease-in 0s 1 normal forwards;
+          animation: fade .5s ease-in 0s 1 normal forwards;
+}
+
+.nav-item > a {
+  text-decoration: none;
+  color: #606f7b;
+  font-size: 1.25rem;
+  font-family: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
+}
+
+.nav-title {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  border-bottom-width: 2px;
+  border-color: transparent;
+  width: 66.66667%;
+  font-size: 1.5rem;
+  font-family: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
+}
+
+.heading {
+  font-size: 2.25rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: right;
+  font-family: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
+}
+
+.subheading {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
+}
+
+.text {
+  font-size: 1.25rem;
+  line-height: 2;
+  text-align: justify;
+  font-family: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
+}
+
+.hr {
+  border-bottom-width: 1px;
+  border-color: #b8c2cc;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.portfolio-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.portfolio-item {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  margin: 1rem;
+}
+
+.portfolio-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-weight: 700;
+  font-size: 1.25rem;
+  text-align: center;
+  height: 16rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.portfolio-1 {
+  background-image: url(/img/thumbnails/1.png);
+}
+
+.portfolio-2 {
+  background-image: url(/img/thumbnails/2.png);
+}
+
+.portfolio-3 {
+  background-image: url(/img/thumbnails/3.png);
+}
+
+.portfolio-4 {
+  background-image: url(/img/thumbnails/4.png);
+}
+
+.portfolio-5 {
+  background-image: url(/img/thumbnails/5.png);
+}
+
+.portfolio-6 {
+  background-image: url(/img/thumbnails/6.png);
+}
+
+.portfolio-7 {
+  background-image: url(/img/thumbnails/7.png);
+}
+
+.portfolio-8 {
+  background-image: url(/img/thumbnails/8.png);
+}
+
+.portfolio-9 {
+  background-image: url(/img/thumbnails/9.png);
+}
+
+.portfolio-10 {
+  background-image: url(/img/thumbnails/10.png);
+}
+
+.portfolio-11 {
+  background-image: url(/img/thumbnails/11.png);
+}
+
+.portfolio-12 {
+  background-image: url(/img/thumbnails/12.png);
+}
+
+.portfolio-13 {
+  background-image: url(/img/thumbnails/13.png);
+}
+
+.portfolio-14 {
+  background-image: url(/img/thumbnails/14.png);
+}
+
+.portfolio-title {
+  background-color: #22292f;
+  font-size: 1.25rem;
+  color: #fff;
+  opacity: .75;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  font-weight: 400;
+  font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+.form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+.form-input {
+  font-size: 1.25rem;
+  font-family: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
+  width: 100%;
+  border-width: 1px;
+  background-color: #f8fafc;
+  padding: 1rem;
+}
+
+.form-input:hover {
+  background-color: #fff;
+  border-color: #6cb2eb;
+  outline: 0;
+}
+
+.form-error {
+  color: #e3342f;
+  padding-top: .5rem;
+  font-size: 1.125rem;
+  font-family: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
+}
+
+.btn {
+  font-size: 1.25rem;
+  color: #6cb2eb;
+  font-family: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  border-width: 4px;
+  border-color: #6cb2eb;
+  border-radius: 9999px;
+}
+
+.btn:hover {
+  background-color: #6cb2eb;
+  color: #fff;
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  font-size: 1.25rem;
+  line-height: 2;
+  font-family: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
+}
+
+.nav-links {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+
+  .nav-button {
+    display: none;
+  }
+
+  .nav-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 66.66667%;
+  }
+
+  .portfolio-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+
+  .portfolio-item {
+    width: 33.33333%;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+}
+
+@media (min-width: 992px) {
+  .portfolio-item {
+    width: 25%;
+  }
+}
+
 /**
  * This injects all of Tailwind's utility classes, generated based on your
  * config file.
@@ -6392,147 +6776,6 @@ table {
  * @import "utilities/background-patterns";
  * @import "utilities/skew-transforms";
  */
-
-@-webkit-keyframes fade {
-  0% {
-    border-width: 1px;
-    border-top-width: 0;
-    border-left-width: 0;
-    border-right-width: 0;
-    border-bottom-width: 2px;
-    border-color: transparent;
-  }
-
-  100% {
-    border-width: 1px;
-    border-top-width: 0;
-    border-left-width: 0;
-    border-right-width: 0;
-    border-bottom-width: 2px;
-    border-color: #6cb2eb;
-  }
-}
-
-@keyframes fade {
-  0% {
-    border-width: 1px;
-    border-top-width: 0;
-    border-left-width: 0;
-    border-right-width: 0;
-    border-bottom-width: 2px;
-    border-color: transparent;
-  }
-
-  100% {
-    border-width: 1px;
-    border-top-width: 0;
-    border-left-width: 0;
-    border-right-width: 0;
-    border-bottom-width: 2px;
-    border-color: #6cb2eb;
-  }
-}
-
-.fade-in:hover {
-  -webkit-animation: fade .5s ease-in 0s 1 normal forwards;
-          animation: fade .5s ease-in 0s 1 normal forwards;
-}
-
-.page-background {
-  background-color: #f1f5f8;
-  height: 100%;
-  background-image: url(/img/header.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.wrapper {
-  background-color: #f8fafc;
-  border-width: 1px;
-  border-color: transparent;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
-.portfolio {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  font-weight: 700;
-  font-size: 1.25rem;
-  text-align: center;
-  height: 16rem;
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.portfolio-1 {
-  background-image: url(/img/thumbnails/1.png);
-}
-
-.portfolio-2 {
-  background-image: url(/img/thumbnails/2.png);
-}
-
-.portfolio-3 {
-  background-image: url(/img/thumbnails/3.png);
-}
-
-.portfolio-4 {
-  background-image: url(/img/thumbnails/4.png);
-}
-
-.portfolio-5 {
-  background-image: url(/img/thumbnails/5.png);
-}
-
-.portfolio-6 {
-  background-image: url(/img/thumbnails/6.png);
-}
-
-.portfolio-7 {
-  background-image: url(/img/thumbnails/7.png);
-}
-
-.portfolio-8 {
-  background-image: url(/img/thumbnails/8.png);
-}
-
-.portfolio-9 {
-  background-image: url(/img/thumbnails/9.png);
-}
-
-.portfolio-10 {
-  background-image: url(/img/thumbnails/10.png);
-}
-
-.portfolio-11 {
-  background-image: url(/img/thumbnails/11.png);
-}
-
-.portfolio-12 {
-  background-image: url(/img/thumbnails/12.png);
-}
-
-.portfolio-13 {
-  background-image: url(/img/thumbnails/13.png);
-}
-
-.portfolio-14 {
-  background-image: url(/img/thumbnails/14.png);
-}
 
 @media (min-width: 576px) {
   .sm\:list-reset {
