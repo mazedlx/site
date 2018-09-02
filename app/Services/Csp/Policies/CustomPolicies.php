@@ -5,7 +5,7 @@ namespace App\Services\Csp\Policies;
 use Spatie\Csp\Directive;
 use Spatie\Csp\Policies\Policy;
 
-class NewPolicies extends Policy
+class CustomPolicies extends Policy
 {
     /** @var App's origin */
     protected $origin;
