@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d8e5e10617470b2331230cee6c325dcb",
+    "content-hash": "ffdc1208cb05680958b0149723a1cf9c",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -455,16 +455,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.6.35",
+            "version": "v5.6.37",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "02abbe2091404ebe032a6d5a83075031b7072ebe"
+                "reference": "975e182d42403b0efdf847c05f6bfb99144f95f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/02abbe2091404ebe032a6d5a83075031b7072ebe",
-                "reference": "02abbe2091404ebe032a6d5a83075031b7072ebe",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/975e182d42403b0efdf847c05f6bfb99144f95f5",
+                "reference": "975e182d42403b0efdf847c05f6bfb99144f95f5",
                 "shasum": ""
             },
             "require": {
@@ -590,7 +590,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2018-08-27T13:18:24+00:00"
+            "time": "2018-09-02T13:51:42+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -741,16 +741,16 @@
         },
         {
             "name": "mazedlx/laravel-feature-policy",
-            "version": "v1.0.1",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mazedlx/laravel-feature-policy.git",
-                "reference": "6a6a8df1aec30a1e3dbd8db6687aa1926d88e2f4"
+                "reference": "e960fd3bf880b3b386e023b275c63c5cdb4d53ad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mazedlx/laravel-feature-policy/zipball/6a6a8df1aec30a1e3dbd8db6687aa1926d88e2f4",
-                "reference": "6a6a8df1aec30a1e3dbd8db6687aa1926d88e2f4",
+                "url": "https://api.github.com/repos/mazedlx/laravel-feature-policy/zipball/e960fd3bf880b3b386e023b275c63c5cdb4d53ad",
+                "reference": "e960fd3bf880b3b386e023b275c63c5cdb4d53ad",
                 "shasum": ""
             },
             "require": {
@@ -796,7 +796,7 @@
                 "laravel-feature-policy",
                 "security"
             ],
-            "time": "2018-08-28T16:34:51+00:00"
+            "time": "2018-09-02T14:50:16+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -3497,16 +3497,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "7.3.2",
+            "version": "7.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "34705f81bddc3f505b9599a2ef96e2b4315ba9b8"
+                "reference": "1bd5629cccfb2c0a9ef5474b4ff772349e1ec898"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/34705f81bddc3f505b9599a2ef96e2b4315ba9b8",
-                "reference": "34705f81bddc3f505b9599a2ef96e2b4315ba9b8",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/1bd5629cccfb2c0a9ef5474b4ff772349e1ec898",
+                "reference": "1bd5629cccfb2c0a9ef5474b4ff772349e1ec898",
                 "shasum": ""
             },
             "require": {
@@ -3577,7 +3577,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2018-08-22T06:39:21+00:00"
+            "time": "2018-09-01T15:49:55+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
