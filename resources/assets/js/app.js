@@ -1,22 +1,19 @@
 import "babel-polyfill";
 import Vue from "vue";
 
-import ContactForm from "./components/ContactForm.vue";
+const ContactForm = require("./components/ContactForm.vue");
 
 const app = new Vue({
-  el: "#app",
+  el: "#vue",
+  render: createElement => createElement(ContactForm),
 
-  components: {
-    ContactForm,
-  },
+  mounted() {},
+});
 
-  mounted() {
-    let btn = document.getElementById("nav_btn");
-    let links = document.getElementById("nav_links");
-    btn.addEventListener("click", function() {
-      links.classList.toggle("hidden");
-      links.classList.toggle("flex");
-      links.classList.toggle("flex-col");
-    });
-  },
+let btn = document.getElementById("nav_btn");
+let links = document.getElementById("nav_links");
+btn.addEventListener("click", function() {
+  links.classList.toggle("hidden");
+  links.classList.toggle("flex");
+  links.classList.toggle("flex-col");
 });

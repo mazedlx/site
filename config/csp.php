@@ -20,7 +20,7 @@ return [
      *
      * You can override this setting by calling `reportTo` on your policy.
      */
-    'report_uri' => env('CSP_REPORT_URI', ''),
+    'report_uri' => env('CSP_REPORT_URI', 'https://mazedlx.report-uri.com/r/d/csp/reportOnly'),
 
     /*
      * Headers will only be added if this setting is set to true.

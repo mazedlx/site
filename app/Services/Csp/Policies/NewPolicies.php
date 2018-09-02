@@ -26,7 +26,7 @@ class NewPolicies extends Policy
     {
         return $this->addDirective(Directive::BASE, 'self')
             ->addDirective(Directive::CONNECT, 'self')
-            ->addDirective(Directive::default, 'self')
+            ->addDirective(Directive::DEFAULT, 'self')
             ->addDirective(Directive::FORM_ACTION, 'self')
             ->addDirective(Directive::IMG, 'self')
             ->addDirective(Directive::IMG, 'data:')
