@@ -6,7 +6,7 @@
     git stash
     git pull
     composer update --no-dev
-    php artisan migrate:fresh --seed
+    php artisan migrate:fresh --seed --force
     yarn prod
     php artisan up
 @endtask
