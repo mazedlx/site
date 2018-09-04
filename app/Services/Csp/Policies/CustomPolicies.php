@@ -34,6 +34,7 @@ class CustomPolicies extends Policy
             ->addDirective(Directive::OBJECT, 'self')
             ->addDirective(Directive::SCRIPT, 'self')
             ->addDirective(Directive::FONT, 'self')
-            ->addDirective(Directive::STYLE, 'self');
+            ->addDirective(Directive::STYLE, 'self')
+            ->addNonceForDirective(Directive::SCRIPT);
     }
 }

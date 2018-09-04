@@ -5,9 +5,8 @@ const ContactForm = require("./components/ContactForm.vue");
 
 const app = new Vue({
   el: "#vue",
-  render: createElement => createElement(ContactForm),
 
-  mounted() {},
+  render: createElement => createElement(ContactForm),
 });
 
 let btn = document.getElementById("nav_btn");

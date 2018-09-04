@@ -1705,7 +1705,6 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 //
 //
 //
-//
 
 
 
@@ -1717,12 +1716,23 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
       email: "",
       message: "",
       errors: [],
-      loading: false
+      loading: false,
+      thankYouMessage: this.isGerman() ? "Vielen Dank für Ihre Nachricht, wir melden uns in Kürze." : "Thank you for your message. We'll get back at you shortly.",
+      placeholders: {
+        name: this.isGerman() ? "Ihr Name" : "Your name",
+        email: this.isGerman() ? "Ihre E-Mail-Adresse" : "Your email address",
+        message: this.isGerman() ? "Ihre Idee die Sie mit uns umsetzen wollen" : "Your awesome idea that needs realization"
+      },
+      buttonText: this.isGerman() ? "Nachricht absenden" : "Send message"
     };
   },
 
 
   methods: {
+    isGerman: function isGerman() {
+      return window.locale === "de";
+    },
+
     clearError: function clearError(key) {
       this.errors[key] = null;
     },
@@ -1740,7 +1750,8 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
                 return __WEBPACK_IMPORTED_MODULE_1_axios___default.a.post("/contact", {
                   name: this.name,
                   email: this.email,
-                  message: this.message
+                  message: this.message,
+                  locale: window.locale
                 });
 
               case 4:
@@ -12419,7 +12430,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _vm.done
     ? _c("div", { staticClass: "subheading text-center py-8" }, [
-        _vm._v("\n  Vielen Dank für Ihre Nachricht! Wir melden uns in Kürze.\n")
+        _vm._v("\n  " + _vm._s(_vm.thankYouMessage) + "\n")
       ])
     : _c(
         "form",
@@ -12442,7 +12453,11 @@ var render = function() {
               class: {
                 "border-red": _vm.errors["name"]
               },
-              attrs: { placeholder: "Ihr Name", type: "text", required: "" },
+              attrs: {
+                placeholder: _vm.placeholders.name,
+                type: "text",
+                required: ""
+              },
               domProps: { value: _vm.name },
               on: {
                 input: [
@@ -12481,7 +12496,7 @@ var render = function() {
                 "border-red": _vm.errors["email"]
               },
               attrs: {
-                placeholder: "Ihre E-Mail-Adressse",
+                placeholder: _vm.placeholders.email,
                 type: "email",
                 required: ""
               },
@@ -12523,7 +12538,7 @@ var render = function() {
                 "border-red": _vm.errors["message"]
               },
               attrs: {
-                placeholder: "Ihre Idee die Sie mit uns umsetzen möchten",
+                placeholder: _vm.placeholders.message,
                 rows: "10",
                 cols: "30",
                 required: ""
@@ -12552,15 +12567,12 @@ var render = function() {
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "flex justify-end" }, [
-            _c(
-              "button",
-              {
-                staticClass: "btn",
-                attrs: { type: "button", disabled: _vm.loading },
-                on: { click: _vm.sendMail }
-              },
-              [_vm._v("\n      Nachricht absenden\n    ")]
-            )
+            _c("button", {
+              staticClass: "btn",
+              attrs: { type: "button", disabled: _vm.loading },
+              domProps: { textContent: _vm._s(_vm.buttonText) },
+              on: { click: _vm.sendMail }
+            })
           ])
         ]
       )
@@ -23588,11 +23600,10 @@ var ContactForm = __webpack_require__("./resources/assets/js/components/ContactF
 
 var app = new __WEBPACK_IMPORTED_MODULE_1_vue___default.a({
   el: "#vue",
+
   render: function render(createElement) {
     return createElement(ContactForm);
-  },
-
-  mounted: function mounted() {}
+  }
 });
 
 var btn = document.getElementById("nav_btn");

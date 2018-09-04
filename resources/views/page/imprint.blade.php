@@ -1,5 +1,5 @@
 <div id="imprint" class="section">
-    <div class="heading">Impressum</div>
+    <div class="heading">@lang('Impressum')</div>
     <p class="text">
         <ul class="list">
             <li>Informationspflicht nach &sect;5 E-Commerce Gesetz</li>

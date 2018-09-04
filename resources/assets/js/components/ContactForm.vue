@@ -1,13 +1,13 @@
 <template>
   <div v-if="done" class="subheading text-center py-8">
-    Vielen Dank für Ihre Nachricht! Wir melden uns in Kürze.
+    {{ thankYouMessage }}
   </div>
   <form v-else action="/contact" method="POST" class="flex flex-col w-full">
     <div class="form-group">
         <input
           v-model="name"
           @input="clearError('name')"
-          placeholder="Ihr Name"
+          :placeholder="placeholders.name"
           type="text"
           class="form-input"
           :class="{
@@ -21,7 +21,7 @@
         <input
           v-model="email"
           @input="clearError('email')"
-          placeholder="Ihre E-Mail-Adressse"
+          :placeholder="placeholders.email"
           type="email"
           class="form-input"
           :class="{
@@ -35,7 +35,7 @@
       <textarea
         v-model="message"
         @input="clearError('message')"
-        placeholder="Ihre Idee die Sie mit uns umsetzen möchten"
+        :placeholder="placeholders.message"
         class="form-input"
         :class="{
             'border-red': errors['message']
@@ -52,9 +52,8 @@
         class="btn"
         type="button"
         :disabled="loading"
-      >
-        Nachricht absenden
-      </button>
+        v-text="buttonText"
+      ></button>
     </div>
   </form>
 </template>
@@ -70,10 +69,25 @@ export default {
       message: "",
       errors: [],
       loading: false,
+      thankYouMessage: this.isGerman()
+        ? "Vielen Dank für Ihre Nachricht, wir melden uns in Kürze."
+        : "Thank you for your message. We'll get back at you shortly.",
+      placeholders: {
+        name: this.isGerman() ? "Ihr Name" : "Your name",
+        email: this.isGerman() ? "Ihre E-Mail-Adresse" : "Your email address",
+        message: this.isGerman()
+          ? "Ihre Idee die Sie mit uns umsetzen wollen"
+          : "Your awesome idea that needs realization",
+      },
+      buttonText: this.isGerman() ? "Nachricht absenden" : "Send message",
     };
   },
 
   methods: {
+    isGerman: function() {
+      return window.locale === "de";
+    },
+
     clearError: function(key) {
       this.errors[key] = null;
     },
@@ -85,6 +99,7 @@ export default {
           name: this.name,
           email: this.email,
           message: this.message,
+          locale: window.locale,
         });
         this.name = "";
         this.email = "";

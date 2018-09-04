@@ -12,5 +12,9 @@
     </head>
     <body class="bg-white">
         @yield('content')
+
+        <script @nonce>
+            window.locale = "{{ App::getLocale() }}";
+        </script>
     </body>
 </html>
