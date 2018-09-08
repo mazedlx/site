@@ -1,23 +1,22 @@
 <div id="services" class="section">
-    <div class="heading">@lang('Leistungen')</div>
-    <div>
-        <h3 class="subheading">@lang('Webdevelopment')</h3>
-        <p class="text">
-            @lang('texts.webdevelopment')
-        </p>
+    <h1 class="heading">@lang('Leistungen')</h1>
 
-        <hr class="hr">
+    <h2 class="subheading">@lang('Webdevelopment')</h2>
+    <p class="text">
+        @lang('texts.webdevelopment')
+    </p>
 
-        <h3 class="subheading">@lang('Mobile und Desktop Applikationen')</h3>
-        <p class="text">
-            @lang('texts.mobile_and_desktop_apps')
-        </p>
+    <hr class="hr" />
 
-        <hr class="border-b border-grey my-6">
+    <h2 class="subheading">@lang('Mobile und Desktop Applikationen')</h2>
+    <p class="text">
+        @lang('texts.mobile_and_desktop_apps')
+    </p>
 
-        <h3 class="subheading">@lang('Trainings')</h3>
-        <p class="text">
-            @lang('texts.trainings')
-        </p>
-    </div>
+    <hr class="border-b border-grey my-6">
+
+    <h2 class="subheading">@lang('Trainings')</h2>
+    <p class="text">
+        @lang('texts.trainings')
+    </p>
 </div>

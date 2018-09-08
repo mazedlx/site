@@ -57,7 +57,7 @@ a {
 }
 
 .heading {
-  @apply text-4xl py-4 text-right font-serif;
+  @apply text-4xl py-4 text-right font-serif font-normal;
 }
 
 .subheading {
@@ -103,7 +103,7 @@ a {
 }
 
 .form-input:hover {
-  @apply bg-white border-blue-light outline-none;
+  @apply bg-white border-blue-light;
 }
 
 .form-error {

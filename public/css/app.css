@@ -828,6 +828,7 @@ a {
   padding-bottom: 1rem;
   text-align: right;
   font-family: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
+  font-weight: 400;
 }
 
 .subheading {
@@ -987,7 +988,6 @@ a {
 .form-input:hover {
   background-color: #fff;
   border-color: #6cb2eb;
-  outline: 0;
 }
 
 .form-error {
