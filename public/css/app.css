@@ -1015,10 +1015,6 @@ a {
   color: #fff;
 }
 
-.btn:focus {
-  outline: 0;
-}
-
 .list {
   list-style: none;
   padding: 0;
