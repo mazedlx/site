@@ -182,7 +182,7 @@ class PortfolioSeeder extends Seeder
 
         Portfolio::create([
             'category_id' => 1,
-            'title' => 'Relaunch benedict.at & benedict-swiss.at',
+            'title' => 'Relaunch benedict.at & benedict-swiss.ch',
             'description' => '
                 Projekt in Zusammenarbeit mit S-MGMT, Relaunch der Websites der Benedict GmbH und der Benedict Swiss AG".
             ',
