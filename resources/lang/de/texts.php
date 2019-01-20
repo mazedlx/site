@@ -11,6 +11,8 @@ return [
         auch als native Desktop- oder Mobile-Anwendung? Wir beraten Sie gerne!',
     'trainings' => 'Sie möchten Ihr Developer-Team auf den neuesten Stand bringen? Wir bieten Trainings im
         Bereich PHP (zB Testing mit PHPUnit) und Javascript (zB ES6,7,8) an.',
+    'consulting' => 'Sie möchten sich auf Ihr Unternehmen konzentrieren, und nicht auf Ihre IT? Wir sind Ihr
+        kompetenter und zuverlässiger Partner, der Sie vom ersten Computer an begleitet.',
     'contact' => 'Sie wollen Ihr nächstes Projekt mit uns starten? Großartig! Füllen Sie das Formular aus oder
         kontaktieren Sie uns unter <a href="tel:+436604563193">+43 660 4563193</a> oder
         <a href="mailto:mazedlx.net?subject=Mein+neues+Projekt">mazedlx@gmail.com</a>',

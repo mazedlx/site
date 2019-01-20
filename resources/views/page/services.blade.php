@@ -19,4 +19,11 @@
     <p class="text">
         @lang('texts.trainings')
     </p>
+
+    <hr class="border-b border-grey my-6">
+
+    <h2 class="subheading">@lang('Consulting')</h2>
+    <p class="text">
+        @lang('texts.consulting')
+    </p>
 </div>
