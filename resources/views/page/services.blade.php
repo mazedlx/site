@@ -13,14 +13,14 @@
         @lang('texts.mobile_and_desktop_apps')
     </p>
 
-    <hr class="border-b border-grey my-6">
+    <hr class="hr" />
 
     <h2 class="subheading">@lang('Trainings')</h2>
     <p class="text">
         @lang('texts.trainings')
     </p>
 
-    <hr class="border-b border-grey my-6">
+    <hr class="hr" />
 
     <h2 class="subheading">@lang('Consulting')</h2>
     <p class="text">

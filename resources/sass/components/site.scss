@@ -1,6 +1,5 @@
 .page-background {
-  @apply bg-grey-lighter h-full bg-no-repeat bg-cover bg-fixed;
-  background-image: url(/img/header.png);
+  @apply bg-teal-lightest h-full bg-no-repeat bg-cover bg-fixed;
 }
 
 .wrapper {
@@ -12,7 +11,7 @@
 }
 
 a {
-  @apply text-blue-light;
+  @apply text-teal-dark;
 }
 
 @keyframes fade {
@@ -20,7 +19,7 @@ a {
     @apply border border-t-0 border-l-0 border-r-0 border-b-2 border-transparent;
   }
   100% {
-    @apply border border-t-0 border-l-0 border-r-0 border-b-2 border-blue-light;
+    @apply border border-t-0 border-l-0 border-r-0 border-b-2 border-teal-dark;
   }
 }
 
@@ -53,15 +52,15 @@ a {
 }
 
 .nav-title {
-  @apply py-2 border-b-2 border-transparent w-2/3 text-2xl font-serif;
+  @apply py-2 border-b-2 border-transparent w-2/3 text-2xl font-serif text-teal-dark;
 }
 
 .heading {
-  @apply text-4xl py-4 text-right font-serif font-normal;
+  @apply text-4xl py-4 text-right font-serif font-normal text-teal-dark;
 }
 
 .subheading {
-  @apply text-2xl font-normal font-serif;
+  @apply text-2xl font-normal font-serif text-teal-dark;
 }
 
 .text {
@@ -69,7 +68,7 @@ a {
 }
 
 .hr {
-  @apply border-b border-grey my-6;
+  @apply border-b border-teal-darker my-6;
 }
 
 .portfolio-container {
@@ -103,7 +102,7 @@ a {
 }
 
 .form-input:hover {
-  @apply bg-white border-blue-light;
+  @apply bg-white border-teal-dark;
 }
 
 .form-error {
@@ -111,11 +110,11 @@ a {
 }
 
 .btn {
-  @apply text-xl text-blue-light font-serif px-4 py-2 border-4 border-blue-light rounded-full;
+  @apply text-xl text-teal-dark font-serif px-4 py-2 border-4 border-teal-dark rounded-full;
 }
 
 .btn:hover {
-  @apply bg-blue-light text-white;
+  @apply bg-teal-dark text-white;
 }
 
 .list {

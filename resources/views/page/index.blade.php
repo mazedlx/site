@@ -2,7 +2,7 @@
 
 @section('content')
 <div id="app" class="page-background">
-    <div class="container wrapper">
+    <div class="container wrapper shadow-lg">
 
         @include('page.nav')
 
@@ -14,7 +14,7 @@
 
         @include('page.imprint')
 
-        @include('page.copyright')
+        {{-- @include('page.copyright') --}}
 
     </div>
 </div>
