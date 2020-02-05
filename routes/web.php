@@ -1,8 +1,6 @@
 <?php
 
-use Illuminate\Support\Facades\App;
-use Illuminate\Support\Facades\Session;
+Route::get('uses', 'UsesController');
+Route::get('{locale?}', 'PageController');
 
-Route::get('/{locale?}', 'PageController');
-
-Route::post('/contact', 'ContactController');
+Route::post('contact', 'ContactController');
