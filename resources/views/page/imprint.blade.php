@@ -1,5 +1,5 @@
 <div id="imprint" class="section">
-    <h1 class="heading">@lang('Impressum')</h1>
+    <h1 class="heading">{{ __('Impressum') }}</h1>
 
     <ul class="list">
         <li>Informationspflicht nach &sect;5 E-Commerce Gesetz</li>

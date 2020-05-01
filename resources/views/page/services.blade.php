@@ -1,29 +1,29 @@
 <div id="services" class="section">
-    <h1 class="heading">@lang('Leistungen')</h1>
+    <h1 class="heading">{{ __('Leistungen') }}</h1>
 
-    <h2 class="subheading">@lang('Webdevelopment')</h2>
+    <h2 class="subheading">{{__('Webdevelopment')}}</h2>
     <p class="text">
-        @lang('texts.webdevelopment')
+        {{ __('texts.webdevelopment') }}
     </p>
 
     <hr class="hr" />
 
-    <h2 class="subheading">@lang('Mobile und Desktop Applikationen')</h2>
+    <h2 class="subheading">{{ __('Mobile und Desktop Applikationen') }}</h2>
     <p class="text">
-        @lang('texts.mobile_and_desktop_apps')
+        {{ __('texts.mobile_and_desktop_apps') }}
     </p>
 
     <hr class="hr" />
 
-    <h2 class="subheading">@lang('Trainings')</h2>
+    <h2 class="subheading">{{ __('Trainings') }}</h2>
     <p class="text">
-        @lang('texts.trainings')
+        {{ __('texts.trainings') }}
     </p>
 
     <hr class="hr" />
 
-    <h2 class="subheading">@lang('Consulting')</h2>
+    <h2 class="subheading">{{ __('Consulting') }}</h2>
     <p class="text">
-        @lang('texts.consulting')
+        {{ __('texts.consulting') }}
     </p>
 </div>

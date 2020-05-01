@@ -14,7 +14,7 @@
 
         @include('page.imprint')
 
-        {{-- @include('page.copyright') --}}
+        @include('page.copyright')
 
     </div>
 </div>
