@@ -1,6 +1,6 @@
 <?php
 
-Route::get('uses', 'UsesController');
-Route::get('{locale?}', 'PageController');
+Route::get('uses', 'UsesController')->name('uses.tech');
+Route::get('{locale?}', 'PageController')->name('locale');
 
-Route::post('contact', 'ContactController');
+Route::post('contact', 'ContactController')->name('contact');

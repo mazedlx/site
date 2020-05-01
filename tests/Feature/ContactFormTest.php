@@ -2,11 +2,9 @@
 
 namespace Tests\Feature;
 
-use Tests\TestCase;
-use Illuminate\Foundation\Testing\WithFaker;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Support\Facades\Mail;
 use App\Mail\ContactMail;
+use Illuminate\Support\Facades\Mail;
+use Tests\TestCase;
 
 class ContactFormTest extends TestCase
 {
@@ -15,6 +13,7 @@ class ContactFormTest extends TestCase
         parent::setUp();
         Mail::fake();
     }
+
     private function validParams($overrides = [])
     {
         return array_merge([
@@ -23,23 +22,57 @@ class ContactFormTest extends TestCase
             'message' => 'Yo, what up dog!',
         ], $overrides);
     }
+
     /** @test */
     public function an_email_gets_sent_when_the_contact_form_is_submitted()
     {
-        $response = $this->post('/contact', $this->validParams());
+        $response = $this->post(route('contact'), $this->validParams());
 
-        $response->assertStatus(200);
+        $response->assertOk();
         Mail::assertSent(ContactMail::class, 1);
     }
 
     /** @test */
     public function name_is_required()
     {
-        $response = $this->post('/contact', $this->validParams([
-            'name' => null,
+        $response = $this->post(route('contact'), $this->validParams([
+            'name' => '',
         ]));
 
-        $response->assertStatus(302);
+        $response->assertSessionHasErrors(['name']);
+        Mail::assertSent(ContactMail::class, 0);
+    }
+
+    /** @test */
+    public function email_is_required()
+    {
+        $response = $this->post(route('contact'), $this->validParams([
+        'email' => '',
+    ]));
+
+        $response->assertSessionHasErrors(['email']);
+        Mail::assertSent(ContactMail::class, 0);
+    }
+
+    /** @test */
+    public function email_must_be_an_email()
+    {
+        $response = $this->post(route('contact'), $this->validParams([
+            'email' => 'not-an-email',
+        ]));
+
+        $response->assertSessionHasErrors(['email']);
+        Mail::assertSent(ContactMail::class, 0);
+    }
+
+    /** @test */
+    public function message_is_required()
+    {
+        $response = $this->post(route('contact'), $this->validParams([
+            'message' => '',
+        ]));
+
+        $response->assertSessionHasErrors(['message']);
         Mail::assertSent(ContactMail::class, 0);
     }
 }

@@ -2,8 +2,8 @@
 
 namespace Tests\Feature;
 
-use Tests\TestCase;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
+use Tests\TestCase;
 
 class SiteTest extends TestCase
 {
@@ -12,6 +12,6 @@ class SiteTest extends TestCase
     /** @test */
     public function the_site_works()
     {
-        $this->get('/')->assertStatus(200);
+        $this->get('/')->assertOk();
     }
 }
