@@ -5,8 +5,11 @@
     php artisan down
     git stash
     git pull
+    composer install --no-dev
     composer update --no-dev
     php artisan migrate:fresh --seed --force
-    yarn prod
+    npm install
+    npm run prod
+    php artisan optimize
     php artisan up
 @endtask
