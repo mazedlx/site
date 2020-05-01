@@ -6,21 +6,21 @@
         {{ __('texts.webdevelopment') }}
     </p>
 
-    <hr class="hr" />
+    <hr class="border-teal-500 border-1 my-8">
 
     <h2 class="text-2xl font-normal font-serif text-teal-700">{{ __('Mobile und Desktop Applikationen') }}</h2>
     <p class="text-xl leading-loose text-justify font-serif">
         {{ __('texts.mobile_and_desktop_apps') }}
     </p>
 
-    <hr class="hr" />
+    <hr class="border-teal-500 border-1 my-8">
 
     <h2 class="text-2xl font-normal font-serif text-teal-700">{{ __('Trainings') }}</h2>
     <p class="text-xl leading-loose text-justify font-serif">
         {{ __('texts.trainings') }}
     </p>
 
-    <hr class="hr" />
+    <hr class="border-teal-500 border-1 my-8">
 
     <h2 class="text-2xl font-normal font-serif text-teal-700">{{ __('Consulting') }}</h2>
     <p class="text-xl leading-loose text-justify font-serif">
