@@ -3,7 +3,7 @@
 namespace App\Exceptions;
 
 use Exception;
-use NunoMaduro\Collision\Adapters\Laravel\ExceptionHandler;
+use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Throwable;
 
 class Handler extends ExceptionHandler

@@ -2,10 +2,6 @@
 
 namespace App\Providers;
 
-use App\Article;
-use App\Company;
-use App\Customer;
-use App\Orderdetail;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 use Illuminate\Support\Facades\Route;
 
@@ -21,23 +17,20 @@ class RouteServiceProvider extends ServiceProvider
     protected $namespace = 'App\Http\Controllers';
 
     /**
+     * The path to the "home" route for your application.
+     *
+     * @var string
+     */
+    public const HOME = '/home';
+
+    /**
      * Define your route model bindings, pattern filters, etc.
      *
      * @return void
      */
     public function boot()
     {
-        Route::bind('article', function ($id) {
-            return Article::withTrashed()->where('id', '=', $id)->first();
-        });
-
-        Route::bind('company', function ($id) {
-            return Company::withTrashed()->where('id', '=', $id)->first();
-        });
-
-        Route::bind('customer', function ($id) {
-            return Customer::withTrashed()->where('id', '=', $id)->first();
-        });
+        //
 
         parent::boot();
     }
@@ -65,12 +58,9 @@ class RouteServiceProvider extends ServiceProvider
      */
     protected function mapWebRoutes()
     {
-        Route::group([
-            'middleware' => 'web',
-            'namespace' => $this->namespace,
-        ], function ($router) {
-            require base_path('routes/web.php');
-        });
+        Route::middleware('web')
+             ->namespace($this->namespace)
+             ->group(base_path('routes/web.php'));
     }
 
     /**
@@ -82,12 +72,9 @@ class RouteServiceProvider extends ServiceProvider
      */
     protected function mapApiRoutes()
     {
-        Route::group([
-            'middleware' => 'api',
-            'namespace' => $this->namespace,
-            'prefix' => 'api',
-        ], function ($router) {
-            require base_path('routes/api.php');
-        });
+        Route::prefix('api')
+             ->middleware('api')
+             ->namespace($this->namespace)
+             ->group(base_path('routes/api.php'));
     }
 }
