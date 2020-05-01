@@ -1,15 +1,15 @@
-<div id="imprint" class="section">
-    <h1 class="heading">{{ __('Impressum') }}</h1>
+<div id="imprint" class="pb-8">
+    <h1 class="text-4xl py-4 text-right font-serif font-normal text-teal-700">{{ __('Impressum') }}</h1>
 
-    <ul class="list">
+    <ul class="text-xl leading-loose font-serif">
         <li>Informationspflicht nach &sect;5 E-Commerce Gesetz</li>
         <li>Offenlegung nach &sect;14 Unternehmensgesetzbuch bzw. &sect;63 Gewerbeordnung</li>
         <li>Offenlegungspflicht nach &sect;25 Mediengesetz</li>
     </ul>
 
-    <hr class="hr" />
+    <hr class="border-b border-teal-700 my-6" />
 
-    <ul class="list">
+    <ul class="text-xl leading-loose font-serif">
         <li>DI(FH) Christian Leo-Pernold</li>
         <li>mazedlx.net webproductions</li>
         <li>Glockenblumengasse 36/6/2</li>

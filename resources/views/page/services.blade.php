@@ -1,29 +1,29 @@
-<div id="services" class="section">
-    <h1 class="heading">{{ __('Leistungen') }}</h1>
+<div id="services" class="pb-8">
+    <h1 class="text-4xl py-4 text-right font-serif font-normal text-teal-700">{{ __('Leistungen') }}</h1>
 
-    <h2 class="subheading">{{__('Webdevelopment')}}</h2>
-    <p class="text">
+    <h2 class="text-2xl font-normal font-serif text-teal-700">{{__('Webdevelopment')}}</h2>
+    <p class="text-xl leading-loose text-justify font-serif">
         {{ __('texts.webdevelopment') }}
     </p>
 
     <hr class="hr" />
 
-    <h2 class="subheading">{{ __('Mobile und Desktop Applikationen') }}</h2>
-    <p class="text">
+    <h2 class="text-2xl font-normal font-serif text-teal-700">{{ __('Mobile und Desktop Applikationen') }}</h2>
+    <p class="text-xl leading-loose text-justify font-serif">
         {{ __('texts.mobile_and_desktop_apps') }}
     </p>
 
     <hr class="hr" />
 
-    <h2 class="subheading">{{ __('Trainings') }}</h2>
-    <p class="text">
+    <h2 class="text-2xl font-normal font-serif text-teal-700">{{ __('Trainings') }}</h2>
+    <p class="text-xl leading-loose text-justify font-serif">
         {{ __('texts.trainings') }}
     </p>
 
     <hr class="hr" />
 
-    <h2 class="subheading">{{ __('Consulting') }}</h2>
-    <p class="text">
+    <h2 class="text-2xl font-normal font-serif text-teal-700">{{ __('Consulting') }}</h2>
+    <p class="text-xl leading-loose text-justify font-serif">
         {{ __('texts.consulting') }}
     </p>
 </div>

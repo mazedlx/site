@@ -1,42 +1,56 @@
 <template>
-  <div v-if="done" class="subheading text-center py-8">
+  <div
+    v-if="done"
+    class="subheading text-center py-8"
+  >
     {{ thankYouMessage }}
   </div>
-  <form v-else action="/contact" method="POST" class="flex flex-col w-full">
-    <div class="form-group">
-        <input
-          v-model="name"
-          @input="clearError('name')"
-          :placeholder="placeholders.name"
-          type="text"
-          class="form-input"
-          :class="{
+  <form
+    v-else
+    action="/contact"
+    method="POST"
+    class="flex flex-col w-full"
+  >
+    <div class="flex flex-col py-2">
+      <input
+        v-model="name"
+        @input="clearError('name')"
+        :placeholder="placeholders.name"
+        type="text"
+        class="text-xl font-serif w-full border bg-gray-200 p-4 hover:bg-white hover:border-teal-700"
+        :class="{
             'border-red': errors['name']
           }"
-          required
-        >
-        <div v-if="errors['name']" class="form-error">{{ errors['name'][0] }}</div>
+        required
+      >
+      <div
+        v-if="errors['name']"
+        class="text-red-500 pt-2 text-lg font-serif"
+      >{{ errors['name'][0] }}</div>
     </div>
-    <div class="form-group">
-        <input
-          v-model="email"
-          @input="clearError('email')"
-          :placeholder="placeholders.email"
-          type="email"
-          class="form-input"
-          :class="{
+    <div class="flex flex-col py-2">
+      <input
+        v-model="email"
+        @input="clearError('email')"
+        :placeholder="placeholders.email"
+        type="email"
+        class="text-xl font-serif w-full border bg-gray-200 p-4"
+        :class="{
             'border-red': errors['email']
           }"
-          required
-        >
-        <div v-if="errors['email']" class="form-error">{{ errors['email'][0] }}</div>
+        required
+      >
+      <div
+        v-if="errors['email']"
+        class="text-red-500 pt-2 text-lg font-serif"
+      >{{ errors['email'][0] }}</div>
     </div>
-    <div class="form-group">
+    <div class="flex flex-col py-2">
       <textarea
         v-model="message"
         @input="clearError('message')"
         :placeholder="placeholders.message"
-        class="form-input"
+        class="text-xl font-serif w-full border bg-gray-200 p-4"
         :class="{
             'border-red': errors['message']
           }"
@@ -44,12 +58,15 @@
         cols="30"
         required
       ></textarea>
-      <div v-if="errors['message']" class="form-error">{{ errors['message'][0] }}</div>
+      <div
+        v-if="errors['message']"
+        class="text-red-500 pt-2 text-lg font-serif"
+      >{{ errors['message'][0] }}</div>
     </div>
     <div class="flex justify-end">
       <button
         @click="sendMail"
-        class="btn"
+        class="text-xl text-teal-700 font-serif px-4 py-2 border-4 border-teal-700 rounded-full hover:bg-teal-700 hover:text-white"
         type="button"
         :disabled="loading"
         v-text="buttonText"
@@ -84,15 +101,15 @@ export default {
   },
 
   methods: {
-    isGerman: function() {
+    isGerman: function () {
       return window.locale === "de";
     },
 
-    clearError: function(key) {
+    clearError: function (key) {
       this.errors[key] = null;
     },
 
-    sendMail: async function() {
+    sendMail: async function () {
       this.loading = true;
       try {
         const response = await axios.post("/contact", {

@@ -1,7 +1,6 @@
-import "babel-polyfill";
 import Vue from "vue";
 
-const ContactForm = require("./components/ContactForm.vue");
+import ContactForm from './components/ContactForm';
 
 const app = new Vue({
   el: "#vue",
@@ -9,10 +8,9 @@ const app = new Vue({
   render: createElement => createElement(ContactForm),
 });
 
-let btn = document.getElementById("nav_btn");
-let links = document.getElementById("nav_links");
+const btn = document.getElementById("nav_btn");
+const links = document.getElementById("nav_links");
 btn.addEventListener("click", function() {
+  console.log('clicked');
   links.classList.toggle("hidden");
-  links.classList.toggle("flex");
-  links.classList.toggle("flex-col");
 });
