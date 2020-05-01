@@ -15,7 +15,7 @@
     "mazedlx/laravel-feature-policy": "1.*",
     "nothingworks/blade-svg": "^0.3.0",
     "spatie/laravel-csp": "^2.2.0",
-    "spatie/laravel-responsecache": "6.*"
+    "spatie/laravel-responsecache": "6.2.*"
   },
   "require-dev": {
     "beyondcode/laravel-dump-server": "^1.0",
