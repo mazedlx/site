@@ -2,10 +2,9 @@
 
 namespace Tests\Feature;
 
-use Tests\TestCase;
-use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\App;
+use Tests\TestCase;
 
 class ChangeLanguageTest extends TestCase
 {
@@ -16,7 +15,7 @@ class ChangeLanguageTest extends TestCase
     {
         $response = $this->get('/en');
 
-        $response->assertStatus(200);
+        $response->assertOk();
         $this->assertEquals('en', App::getLocale());
     }
 
@@ -24,7 +23,7 @@ class ChangeLanguageTest extends TestCase
     public function it_can_change_the_language_to_german()
     {
         $response = $this->get('/de');
-        $response->assertStatus(200);
+        $response->assertOk();
         $this->assertEquals('de', App::getLocale());
     }
 
@@ -33,7 +32,7 @@ class ChangeLanguageTest extends TestCase
     {
         $response = $this->get('/');
 
-        $response->assertStatus(200);
+        $response->assertOk();
         $this->assertEquals('de', App::getLocale());
     }
 }

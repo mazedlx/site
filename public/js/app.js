@@ -8,150 +8,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
-/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
-
-
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
-
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-  data: function data() {
-    return {
-      done: false,
-      name: "",
-      email: "",
-      message: "",
-      errors: [],
-      loading: false,
-      thankYouMessage: this.isGerman() ? "Vielen Dank für Ihre Nachricht, wir melden uns in Kürze." : "Thank you for your message. We'll get back at you shortly.",
-      placeholders: {
-        name: this.isGerman() ? "Ihr Name" : "Your name",
-        email: this.isGerman() ? "Ihre E-Mail-Adresse" : "Your email address",
-        message: this.isGerman() ? "Ihre Idee die Sie mit uns umsetzen wollen" : "Your awesome idea that needs realization"
-      },
-      buttonText: this.isGerman() ? "Nachricht absenden" : "Send message"
-    };
-  },
-  methods: {
-    isGerman: function isGerman() {
-      return window.locale === "de";
-    },
-    clearError: function clearError(key) {
-      this.errors[key] = null;
-    },
-    sendMail: function () {
-      var _sendMail = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
-        var response;
-        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                this.loading = true;
-                _context.prev = 1;
-                _context.next = 4;
-                return axios__WEBPACK_IMPORTED_MODULE_1___default.a.post("/contact", {
-                  name: this.name,
-                  email: this.email,
-                  message: this.message,
-                  locale: window.locale
-                });
-
-              case 4:
-                response = _context.sent;
-                this.name = "";
-                this.email = "";
-                this.message = "";
-                this.done = true;
-                _context.next = 15;
-                break;
-
-              case 11:
-                _context.prev = 11;
-                _context.t0 = _context["catch"](1);
-                this.errors = _context.t0.response.data.errors;
-                this.loading = false;
-
-              case 15:
-              case "end":
-                return _context.stop();
-            }
-          }
-        }, _callee, this, [[1, 11]]);
-      }));
-
-      function sendMail() {
-        return _sendMail.apply(this, arguments);
-      }
-
-      return sendMail;
-    }()
-  }
-});
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ \"./node_modules/@babel/runtime/regenerator/index.js\");\n/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ \"./node_modules/axios/index.js\");\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);\n\n\nfunction asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }\n\nfunction _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"next\", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"throw\", err); } _next(undefined); }); }; }\n\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  data: function data() {\n    return {\n      done: false,\n      name: '',\n      email: '',\n      message: '',\n      errors: [],\n      loading: false,\n      thankYouMessage: this.isGerman() ? 'Vielen Dank für Ihre Nachricht, wir melden uns in Kürze.' : 'Thank you for your message. We\\'ll get back at you shortly.',\n      placeholders: {\n        name: this.isGerman() ? 'Ihr Name' : 'Your name',\n        email: this.isGerman() ? 'Ihre E-Mail-Adresse' : 'Your email address',\n        message: this.isGerman() ? 'Ihre Idee die Sie mit uns umsetzen wollen' : 'Your awesome idea that needs realization'\n      },\n      spamProtection: '',\n      buttonText: this.isGerman() ? 'Nachricht absenden' : 'Send message'\n    };\n  },\n  methods: {\n    isGerman: function isGerman() {\n      return window.locale === 'de';\n    },\n    clearError: function clearError(key) {\n      this.errors[key] = null;\n    },\n    sendMail: function () {\n      var _sendMail = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {\n        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {\n          while (1) {\n            switch (_context.prev = _context.next) {\n              case 0:\n                this.loading = true;\n                _context.prev = 1;\n                _context.next = 4;\n                return axios__WEBPACK_IMPORTED_MODULE_1___default.a.post('/contact', {\n                  name: this.name,\n                  email: this.email,\n                  message: this.message,\n                  spam_protection: this.spamProtection,\n                  locale: window.locale\n                });\n\n              case 4:\n                this.name = '';\n                this.email = '';\n                this.message = '';\n                this.done = true;\n                document.getElementById('thanks').scrollIntoView();\n                _context.next = 15;\n                break;\n\n              case 11:\n                _context.prev = 11;\n                _context.t0 = _context[\"catch\"](1);\n                this.errors = _context.t0.repsonse && _context.t0.response.data.errors;\n                this.loading = false;\n\n              case 15:\n              case \"end\":\n                return _context.stop();\n            }\n          }\n        }, _callee, this, [[1, 11]]);\n      }));\n\n      function sendMail() {\n        return _sendMail.apply(this, arguments);\n      }\n\n      return sendMail;\n    }()\n  }\n});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vcmVzb3VyY2VzL2pzL2NvbXBvbmVudHMvQ29udGFjdEZvcm0udnVlPzhiMTAiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQW9GQTtBQUVBO0FBQ0EsTUFEQSxrQkFDQTtBQUNBO0FBQ0EsaUJBREE7QUFFQSxjQUZBO0FBR0EsZUFIQTtBQUlBLGlCQUpBO0FBS0EsZ0JBTEE7QUFNQSxvQkFOQTtBQU9BLHlDQUNBLDBEQURBLEdBRUEsNkRBVEE7QUFVQTtBQUNBLHdEQURBO0FBRUEsNkVBRkE7QUFHQSxtQ0FDQSwyQ0FEQSxHQUVBO0FBTEEsT0FWQTtBQWlCQSx3QkFqQkE7QUFrQkE7QUFsQkE7QUFvQkEsR0F0QkE7QUF3QkE7QUFDQTtBQUNBO0FBQ0EsS0FIQTtBQUtBO0FBQ0E7QUFDQSxLQVBBO0FBU0E7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQ0E7QUFEQTtBQUFBO0FBQUEsdUJBR0E7QUFDQSxpQ0FEQTtBQUVBLG1DQUZBO0FBR0EsdUNBSEE7QUFJQSxzREFKQTtBQUtBO0FBTEEsa0JBSEE7O0FBQUE7QUFVQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBZEE7QUFBQTs7QUFBQTtBQUFBO0FBQUE7QUFnQkE7QUFDQTs7QUFqQkE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7O0FBQUE7QUFBQTtBQUFBOztBQUFBO0FBQUE7QUFUQTtBQXhCQSIsImZpbGUiOiIuL25vZGVfbW9kdWxlcy9iYWJlbC1sb2FkZXIvbGliL2luZGV4LmpzPyEuL25vZGVfbW9kdWxlcy92dWUtbG9hZGVyL2xpYi9pbmRleC5qcz8hLi9yZXNvdXJjZXMvanMvY29tcG9uZW50cy9Db250YWN0Rm9ybS52dWU/dnVlJnR5cGU9c2NyaXB0Jmxhbmc9anMmLmpzIiwic291cmNlc0NvbnRlbnQiOlsiPHRlbXBsYXRlPlxuICA8ZGl2XG4gICAgaWQ9XCJ0aGFua3NcIlxuICAgIHYtaWY9XCJkb25lXCJcbiAgICBjbGFzcz1cInRleHQtY2VudGVyIHRleHQtM3hsIGZvbnQtc2VyaWYgcHktNFwiXG4gID5cbiAgICB7eyB0aGFua1lvdU1lc3NhZ2UgfX1cbiAgPC9kaXY+XG4gIDxmb3JtXG4gICAgdi1lbHNlXG4gICAgYWN0aW9uPVwiL2NvbnRhY3RcIlxuICAgIG1ldGhvZD1cIlBPU1RcIlxuICAgIGNsYXNzPVwiZmxleCBmbGV4LWNvbCB3LWZ1bGxcIlxuICA+XG4gICAgPGRpdiBjbGFzcz1cImZsZXggZmxleC1jb2wgcHktMlwiPlxuICAgICAgPGlucHV0XG4gICAgICAgIHYtbW9kZWw9XCJuYW1lXCJcbiAgICAgICAgQGlucHV0PVwiY2xlYXJFcnJvcignbmFtZScpXCJcbiAgICAgICAgOnBsYWNlaG9sZGVyPVwicGxhY2Vob2xkZXJzLm5hbWVcIlxuICAgICAgICB0eXBlPVwidGV4dFwiXG4gICAgICAgIGNsYXNzPVwidGV4dC14bCBmb250LXNlcmlmIHctZnVsbCBib3JkZXIgYmctZ3JheS0yMDAgcC00IGhvdmVyOmJnLXdoaXRlIGhvdmVyOmJvcmRlci10ZWFsLTcwMFwiXG4gICAgICAgIDpjbGFzcz1cIntcbiAgICAgICAgICAgICdib3JkZXItcmVkJzogZXJyb3JzWyduYW1lJ11cbiAgICAgICAgICB9XCJcbiAgICAgICAgcmVxdWlyZWRcbiAgICAgID5cbiAgICAgIDxkaXZcbiAgICAgICAgdi1pZj1cImVycm9yc1snbmFtZSddXCJcbiAgICAgICAgY2xhc3M9XCJ0ZXh0LXJlZC01MDAgcHQtMiB0ZXh0LWxnIGZvbnQtc2VyaWZcIlxuICAgICAgPnt7IGVycm9yc1snbmFtZSddWzBdIH19PC9kaXY+XG4gICAgPC9kaXY+XG4gICAgPGRpdiBjbGFzcz1cImZsZXggZmxleC1jb2wgcHktMlwiPlxuICAgICAgPGlucHV0XG4gICAgICAgIHYtbW9kZWw9XCJlbWFpbFwiXG4gICAgICAgIEBpbnB1dD1cImNsZWFyRXJyb3IoJ2VtYWlsJylcIlxuICAgICAgICA6cGxhY2Vob2xkZXI9XCJwbGFjZWhvbGRlcnMuZW1haWxcIlxuICAgICAgICB0eXBlPVwiZW1haWxcIlxuICAgICAgICBjbGFzcz1cInRleHQteGwgZm9udC1zZXJpZiB3LWZ1bGwgYm9yZGVyIGJnLWdyYXktMjAwIHAtNFwiXG4gICAgICAgIDpjbGFzcz1cIntcbiAgICAgICAgICAgICdib3JkZXItcmVkJzogZXJyb3JzWydlbWFpbCddXG4gICAgICAgICAgfVwiXG4gICAgICAgIHJlcXVpcmVkXG4gICAgICA+XG4gICAgICA8ZGl2XG4gICAgICAgIHYtaWY9XCJlcnJvcnNbJ2VtYWlsJ11cIlxuICAgICAgICBjbGFzcz1cInRleHQtcmVkLTUwMCBwdC0yIHRleHQtbGcgZm9udC1zZXJpZlwiXG4gICAgICA+e3sgZXJyb3JzWydlbWFpbCddWzBdIH19PC9kaXY+XG4gICAgPC9kaXY+XG4gICAgPGRpdiBjbGFzcz1cImZsZXggZmxleC1jb2wgcHktMlwiPlxuICAgICAgPHRleHRhcmVhXG4gICAgICAgIHYtbW9kZWw9XCJtZXNzYWdlXCJcbiAgICAgICAgQGlucHV0PVwiY2xlYXJFcnJvcignbWVzc2FnZScpXCJcbiAgICAgICAgOnBsYWNlaG9sZGVyPVwicGxhY2Vob2xkZXJzLm1lc3NhZ2VcIlxuICAgICAgICBjbGFzcz1cInRleHQteGwgZm9udC1zZXJpZiB3LWZ1bGwgYm9yZGVyIGJnLWdyYXktMjAwIHAtNFwiXG4gICAgICAgIDpjbGFzcz1cIntcbiAgICAgICAgICAgICdib3JkZXItcmVkJzogZXJyb3JzWydtZXNzYWdlJ11cbiAgICAgICAgICB9XCJcbiAgICAgICAgcm93cz1cIjEwXCJcbiAgICAgICAgY29scz1cIjMwXCJcbiAgICAgICAgcmVxdWlyZWRcbiAgICAgID48L3RleHRhcmVhPlxuICAgICAgPGRpdlxuICAgICAgICB2LWlmPVwiZXJyb3JzWydtZXNzYWdlJ11cIlxuICAgICAgICBjbGFzcz1cInRleHQtcmVkLTUwMCBwdC0yIHRleHQtbGcgZm9udC1zZXJpZlwiXG4gICAgICA+e3sgZXJyb3JzWydtZXNzYWdlJ11bMF0gfX08L2Rpdj5cbiAgICA8L2Rpdj5cbiAgICA8ZGl2IGNsYXNzPVwiZmxleCBqdXN0aWZ5LWVuZFwiPlxuICAgICAgPGJ1dHRvblxuICAgICAgICBAY2xpY2s9XCJzZW5kTWFpbFwiXG4gICAgICAgIGNsYXNzPVwidGV4dC14bCB0ZXh0LXRlYWwtNzAwIGZvbnQtc2VyaWYgcHgtNCBweS0yIGJvcmRlci00IGJvcmRlci10ZWFsLTcwMCByb3VuZGVkLWZ1bGwgaG92ZXI6YmctdGVhbC03MDAgaG92ZXI6dGV4dC13aGl0ZVwiXG4gICAgICAgIHR5cGU9XCJidXR0b25cIlxuICAgICAgICA6ZGlzYWJsZWQ9XCJsb2FkaW5nXCJcbiAgICAgICAgdi10ZXh0PVwiYnV0dG9uVGV4dFwiXG4gICAgICA+PC9idXR0b24+XG4gICAgPC9kaXY+XG4gICAgPGlucHV0XG4gICAgICB2LW1vZGVsPVwic3BhbVByb3RlY3Rpb25cIlxuICAgICAgQGlucHV0PVwiY2xlYXJFcnJvcignZW1haWwnKVwiXG4gICAgICB0eXBlPVwidGV4dFwiXG4gICAgICBjbGFzcz1cImhpZGRlblwiXG4gICAgPlxuICA8L2Zvcm0+XG48L3RlbXBsYXRlPlxuPHNjcmlwdD5cbmltcG9ydCBheGlvcyBmcm9tICdheGlvcyc7XG5cbmV4cG9ydCBkZWZhdWx0IHtcbiAgZGF0YSgpIHtcbiAgICByZXR1cm4ge1xuICAgICAgZG9uZTogZmFsc2UsXG4gICAgICBuYW1lOiAnJyxcbiAgICAgIGVtYWlsOiAnJyxcbiAgICAgIG1lc3NhZ2U6ICcnLFxuICAgICAgZXJyb3JzOiBbXSxcbiAgICAgIGxvYWRpbmc6IGZhbHNlLFxuICAgICAgdGhhbmtZb3VNZXNzYWdlOiB0aGlzLmlzR2VybWFuKClcbiAgICAgICAgPyAnVmllbGVuIERhbmsgZsO8ciBJaHJlIE5hY2hyaWNodCwgd2lyIG1lbGRlbiB1bnMgaW4gS8O8cnplLidcbiAgICAgICAgOiAnVGhhbmsgeW91IGZvciB5b3VyIG1lc3NhZ2UuIFdlXFwnbGwgZ2V0IGJhY2sgYXQgeW91IHNob3J0bHkuJyxcbiAgICAgIHBsYWNlaG9sZGVyczoge1xuICAgICAgICBuYW1lOiB0aGlzLmlzR2VybWFuKCkgPyAnSWhyIE5hbWUnIDogJ1lvdXIgbmFtZScsXG4gICAgICAgIGVtYWlsOiB0aGlzLmlzR2VybWFuKCkgPyAnSWhyZSBFLU1haWwtQWRyZXNzZScgOiAnWW91ciBlbWFpbCBhZGRyZXNzJyxcbiAgICAgICAgbWVzc2FnZTogdGhpcy5pc0dlcm1hbigpXG4gICAgICAgICAgPyAnSWhyZSBJZGVlIGRpZSBTaWUgbWl0IHVucyB1bXNldHplbiB3b2xsZW4nXG4gICAgICAgICAgOiAnWW91ciBhd2Vzb21lIGlkZWEgdGhhdCBuZWVkcyByZWFsaXphdGlvbicsXG4gICAgICB9LFxuICAgICAgc3BhbVByb3RlY3Rpb246ICcnLFxuICAgICAgYnV0dG9uVGV4dDogdGhpcy5pc0dlcm1hbigpID8gJ05hY2hyaWNodCBhYnNlbmRlbicgOiAnU2VuZCBtZXNzYWdlJyxcbiAgICB9O1xuICB9LFxuXG4gIG1ldGhvZHM6IHtcbiAgICBpc0dlcm1hbjogZnVuY3Rpb24gKCkge1xuICAgICAgcmV0dXJuIHdpbmRvdy5sb2NhbGUgPT09ICdkZSc7XG4gICAgfSxcblxuICAgIGNsZWFyRXJyb3I6IGZ1bmN0aW9uIChrZXkpIHtcbiAgICAgIHRoaXMuZXJyb3JzW2tleV0gPSBudWxsO1xuICAgIH0sXG5cbiAgICBzZW5kTWFpbDogYXN5bmMgZnVuY3Rpb24gKCkge1xuICAgICAgdGhpcy5sb2FkaW5nID0gdHJ1ZTtcbiAgICAgIHRyeSB7XG4gICAgICAgIGF3YWl0IGF4aW9zLnBvc3QoJy9jb250YWN0Jywge1xuICAgICAgICAgIG5hbWU6IHRoaXMubmFtZSxcbiAgICAgICAgICBlbWFpbDogdGhpcy5lbWFpbCxcbiAgICAgICAgICBtZXNzYWdlOiB0aGlzLm1lc3NhZ2UsXG4gICAgICAgICAgc3BhbV9wcm90ZWN0aW9uOiB0aGlzLnNwYW1Qcm90ZWN0aW9uLFxuICAgICAgICAgIGxvY2FsZTogd2luZG93LmxvY2FsZSxcbiAgICAgICAgfSk7XG4gICAgICAgIHRoaXMubmFtZSA9ICcnO1xuICAgICAgICB0aGlzLmVtYWlsID0gJyc7XG4gICAgICAgIHRoaXMubWVzc2FnZSA9ICcnO1xuICAgICAgICB0aGlzLmRvbmUgPSB0cnVlO1xuICAgICAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgndGhhbmtzJykuc2Nyb2xsSW50b1ZpZXcoKTtcbiAgICAgIH0gY2F0Y2ggKGVycm9yKSB7XG4gICAgICAgIHRoaXMuZXJyb3JzID0gZXJyb3IucmVwc29uc2UgJiYgZXJyb3IucmVzcG9uc2UuZGF0YS5lcnJvcnM7XG4gICAgICAgIHRoaXMubG9hZGluZyA9IGZhbHNlO1xuICAgICAgfVxuICAgIH0sXG4gIH0sXG59O1xuPC9zY3JpcHQ+XG4iXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ContactForm.vue?vue&type=script&lang=js&\n");
 
 /***/ }),
 
@@ -163,166 +20,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _vm.done
-    ? _c("div", { staticClass: "subheading text-center py-8" }, [
-        _vm._v("\n  " + _vm._s(_vm.thankYouMessage) + "\n")
-      ])
-    : _c(
-        "form",
-        {
-          staticClass: "flex flex-col w-full",
-          attrs: { action: "/contact", method: "POST" }
-        },
-        [
-          _c("div", { staticClass: "form-group" }, [
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.name,
-                  expression: "name"
-                }
-              ],
-              staticClass: "form-input",
-              class: {
-                "border-red": _vm.errors["name"]
-              },
-              attrs: {
-                placeholder: _vm.placeholders.name,
-                type: "text",
-                required: ""
-              },
-              domProps: { value: _vm.name },
-              on: {
-                input: [
-                  function($event) {
-                    if ($event.target.composing) {
-                      return
-                    }
-                    _vm.name = $event.target.value
-                  },
-                  function($event) {
-                    return _vm.clearError("name")
-                  }
-                ]
-              }
-            }),
-            _vm._v(" "),
-            _vm.errors["name"]
-              ? _c("div", { staticClass: "form-error" }, [
-                  _vm._v(_vm._s(_vm.errors["name"][0]))
-                ])
-              : _vm._e()
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "form-group" }, [
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.email,
-                  expression: "email"
-                }
-              ],
-              staticClass: "form-input",
-              class: {
-                "border-red": _vm.errors["email"]
-              },
-              attrs: {
-                placeholder: _vm.placeholders.email,
-                type: "email",
-                required: ""
-              },
-              domProps: { value: _vm.email },
-              on: {
-                input: [
-                  function($event) {
-                    if ($event.target.composing) {
-                      return
-                    }
-                    _vm.email = $event.target.value
-                  },
-                  function($event) {
-                    return _vm.clearError("email")
-                  }
-                ]
-              }
-            }),
-            _vm._v(" "),
-            _vm.errors["email"]
-              ? _c("div", { staticClass: "form-error" }, [
-                  _vm._v(_vm._s(_vm.errors["email"][0]))
-                ])
-              : _vm._e()
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "form-group" }, [
-            _c("textarea", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.message,
-                  expression: "message"
-                }
-              ],
-              staticClass: "form-input",
-              class: {
-                "border-red": _vm.errors["message"]
-              },
-              attrs: {
-                placeholder: _vm.placeholders.message,
-                rows: "10",
-                cols: "30",
-                required: ""
-              },
-              domProps: { value: _vm.message },
-              on: {
-                input: [
-                  function($event) {
-                    if ($event.target.composing) {
-                      return
-                    }
-                    _vm.message = $event.target.value
-                  },
-                  function($event) {
-                    return _vm.clearError("message")
-                  }
-                ]
-              }
-            }),
-            _vm._v(" "),
-            _vm.errors["message"]
-              ? _c("div", { staticClass: "form-error" }, [
-                  _vm._v(_vm._s(_vm.errors["message"][0]))
-                ])
-              : _vm._e()
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "flex justify-end" }, [
-            _c("button", {
-              staticClass: "btn",
-              attrs: { type: "button", disabled: _vm.loading },
-              domProps: { textContent: _vm._s(_vm.buttonText) },
-              on: { click: _vm.sendMail }
-            })
-          ])
-        ]
-      )
-}
-var staticRenderFns = []
-render._withStripped = true
-
-
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _vm.done\n    ? _c(\n        \"div\",\n        {\n          staticClass: \"text-center text-3xl font-serif py-4\",\n          attrs: { id: \"thanks\" }\n        },\n        [_vm._v(\"\\n  \" + _vm._s(_vm.thankYouMessage) + \"\\n\")]\n      )\n    : _c(\n        \"form\",\n        {\n          staticClass: \"flex flex-col w-full\",\n          attrs: { action: \"/contact\", method: \"POST\" }\n        },\n        [\n          _c(\"div\", { staticClass: \"flex flex-col py-2\" }, [\n            _c(\"input\", {\n              directives: [\n                {\n                  name: \"model\",\n                  rawName: \"v-model\",\n                  value: _vm.name,\n                  expression: \"name\"\n                }\n              ],\n              staticClass:\n                \"text-xl font-serif w-full border bg-gray-200 p-4 hover:bg-white hover:border-teal-700\",\n              class: {\n                \"border-red\": _vm.errors[\"name\"]\n              },\n              attrs: {\n                placeholder: _vm.placeholders.name,\n                type: \"text\",\n                required: \"\"\n              },\n              domProps: { value: _vm.name },\n              on: {\n                input: [\n                  function($event) {\n                    if ($event.target.composing) {\n                      return\n                    }\n                    _vm.name = $event.target.value\n                  },\n                  function($event) {\n                    return _vm.clearError(\"name\")\n                  }\n                ]\n              }\n            }),\n            _vm._v(\" \"),\n            _vm.errors[\"name\"]\n              ? _c(\n                  \"div\",\n                  { staticClass: \"text-red-500 pt-2 text-lg font-serif\" },\n                  [_vm._v(_vm._s(_vm.errors[\"name\"][0]))]\n                )\n              : _vm._e()\n          ]),\n          _vm._v(\" \"),\n          _c(\"div\", { staticClass: \"flex flex-col py-2\" }, [\n            _c(\"input\", {\n              directives: [\n                {\n                  name: \"model\",\n                  rawName: \"v-model\",\n                  value: _vm.email,\n                  expression: \"email\"\n                }\n              ],\n              staticClass: \"text-xl font-serif w-full border bg-gray-200 p-4\",\n              class: {\n                \"border-red\": _vm.errors[\"email\"]\n              },\n              attrs: {\n                placeholder: _vm.placeholders.email,\n                type: \"email\",\n                required: \"\"\n              },\n              domProps: { value: _vm.email },\n              on: {\n                input: [\n                  function($event) {\n                    if ($event.target.composing) {\n                      return\n                    }\n                    _vm.email = $event.target.value\n                  },\n                  function($event) {\n                    return _vm.clearError(\"email\")\n                  }\n                ]\n              }\n            }),\n            _vm._v(\" \"),\n            _vm.errors[\"email\"]\n              ? _c(\n                  \"div\",\n                  { staticClass: \"text-red-500 pt-2 text-lg font-serif\" },\n                  [_vm._v(_vm._s(_vm.errors[\"email\"][0]))]\n                )\n              : _vm._e()\n          ]),\n          _vm._v(\" \"),\n          _c(\"div\", { staticClass: \"flex flex-col py-2\" }, [\n            _c(\"textarea\", {\n              directives: [\n                {\n                  name: \"model\",\n                  rawName: \"v-model\",\n                  value: _vm.message,\n                  expression: \"message\"\n                }\n              ],\n              staticClass: \"text-xl font-serif w-full border bg-gray-200 p-4\",\n              class: {\n                \"border-red\": _vm.errors[\"message\"]\n              },\n              attrs: {\n                placeholder: _vm.placeholders.message,\n                rows: \"10\",\n                cols: \"30\",\n                required: \"\"\n              },\n              domProps: { value: _vm.message },\n              on: {\n                input: [\n                  function($event) {\n                    if ($event.target.composing) {\n                      return\n                    }\n                    _vm.message = $event.target.value\n                  },\n                  function($event) {\n                    return _vm.clearError(\"message\")\n                  }\n                ]\n              }\n            }),\n            _vm._v(\" \"),\n            _vm.errors[\"message\"]\n              ? _c(\n                  \"div\",\n                  { staticClass: \"text-red-500 pt-2 text-lg font-serif\" },\n                  [_vm._v(_vm._s(_vm.errors[\"message\"][0]))]\n                )\n              : _vm._e()\n          ]),\n          _vm._v(\" \"),\n          _c(\"div\", { staticClass: \"flex justify-end\" }, [\n            _c(\"button\", {\n              staticClass:\n                \"text-xl text-teal-700 font-serif px-4 py-2 border-4 border-teal-700 rounded-full hover:bg-teal-700 hover:text-white\",\n              attrs: { type: \"button\", disabled: _vm.loading },\n              domProps: { textContent: _vm._s(_vm.buttonText) },\n              on: { click: _vm.sendMail }\n            })\n          ]),\n          _vm._v(\" \"),\n          _c(\"input\", {\n            directives: [\n              {\n                name: \"model\",\n                rawName: \"v-model\",\n                value: _vm.spamProtection,\n                expression: \"spamProtection\"\n              }\n            ],\n            staticClass: \"hidden\",\n            attrs: { type: \"text\" },\n            domProps: { value: _vm.spamProtection },\n            on: {\n              input: [\n                function($event) {\n                  if ($event.target.composing) {\n                    return\n                  }\n                  _vm.spamProtection = $event.target.value\n                },\n                function($event) {\n                  return _vm.clearError(\"email\")\n                }\n              ]\n            }\n          })\n        ]\n      )\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvanMvY29tcG9uZW50cy9Db250YWN0Rm9ybS52dWU/NTIyNCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtBQUFBO0FBQUE7QUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQSxrQkFBa0I7QUFDbEIsU0FBUztBQUNUO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBLGtCQUFrQjtBQUNsQixTQUFTO0FBQ1Q7QUFDQSxxQkFBcUIsb0NBQW9DO0FBQ3pEO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0EsZUFBZTtBQUNmO0FBQ0E7QUFDQTtBQUNBO0FBQ0EsZUFBZTtBQUNmLHlCQUF5QixrQkFBa0I7QUFDM0M7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQSxtQkFBbUI7QUFDbkI7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBLGFBQWE7QUFDYjtBQUNBO0FBQ0E7QUFDQTtBQUNBLG1CQUFtQixzREFBc0Q7QUFDekU7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBLHFCQUFxQixvQ0FBb0M7QUFDekQ7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0EsZUFBZTtBQUNmO0FBQ0E7QUFDQTtBQUNBO0FBQ0EsZUFBZTtBQUNmLHlCQUF5QixtQkFBbUI7QUFDNUM7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQSxtQkFBbUI7QUFDbkI7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBLGFBQWE7QUFDYjtBQUNBO0FBQ0E7QUFDQTtBQUNBLG1CQUFtQixzREFBc0Q7QUFDekU7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBLHFCQUFxQixvQ0FBb0M7QUFDekQ7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0EsZUFBZTtBQUNmO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQSxlQUFlO0FBQ2YseUJBQXlCLHFCQUFxQjtBQUM5QztBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBLG1CQUFtQjtBQUNuQjtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0EsYUFBYTtBQUNiO0FBQ0E7QUFDQTtBQUNBO0FBQ0EsbUJBQW1CLHNEQUFzRDtBQUN6RTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0EscUJBQXFCLGtDQUFrQztBQUN2RDtBQUNBO0FBQ0E7QUFDQSxzQkFBc0Isd0NBQXdDO0FBQzlELHlCQUF5QixzQ0FBc0M7QUFDL0QsbUJBQW1CO0FBQ25CLGFBQWE7QUFDYjtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQSxvQkFBb0IsZUFBZTtBQUNuQyx1QkFBdUIsNEJBQTRCO0FBQ25EO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0EsaUJBQWlCO0FBQ2pCO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQSxXQUFXO0FBQ1g7QUFDQTtBQUNBO0FBQ0E7QUFDQSIsImZpbGUiOiIuL25vZGVfbW9kdWxlcy92dWUtbG9hZGVyL2xpYi9sb2FkZXJzL3RlbXBsYXRlTG9hZGVyLmpzPyEuL25vZGVfbW9kdWxlcy92dWUtbG9hZGVyL2xpYi9pbmRleC5qcz8hLi9yZXNvdXJjZXMvanMvY29tcG9uZW50cy9Db250YWN0Rm9ybS52dWU/dnVlJnR5cGU9dGVtcGxhdGUmaWQ9NzZkYjI0MmUmLmpzIiwic291cmNlc0NvbnRlbnQiOlsidmFyIHJlbmRlciA9IGZ1bmN0aW9uKCkge1xuICB2YXIgX3ZtID0gdGhpc1xuICB2YXIgX2ggPSBfdm0uJGNyZWF0ZUVsZW1lbnRcbiAgdmFyIF9jID0gX3ZtLl9zZWxmLl9jIHx8IF9oXG4gIHJldHVybiBfdm0uZG9uZVxuICAgID8gX2MoXG4gICAgICAgIFwiZGl2XCIsXG4gICAgICAgIHtcbiAgICAgICAgICBzdGF0aWNDbGFzczogXCJ0ZXh0LWNlbnRlciB0ZXh0LTN4bCBmb250LXNlcmlmIHB5LTRcIixcbiAgICAgICAgICBhdHRyczogeyBpZDogXCJ0aGFua3NcIiB9XG4gICAgICAgIH0sXG4gICAgICAgIFtfdm0uX3YoXCJcXG4gIFwiICsgX3ZtLl9zKF92bS50aGFua1lvdU1lc3NhZ2UpICsgXCJcXG5cIildXG4gICAgICApXG4gICAgOiBfYyhcbiAgICAgICAgXCJmb3JtXCIsXG4gICAgICAgIHtcbiAgICAgICAgICBzdGF0aWNDbGFzczogXCJmbGV4IGZsZXgtY29sIHctZnVsbFwiLFxuICAgICAgICAgIGF0dHJzOiB7IGFjdGlvbjogXCIvY29udGFjdFwiLCBtZXRob2Q6IFwiUE9TVFwiIH1cbiAgICAgICAgfSxcbiAgICAgICAgW1xuICAgICAgICAgIF9jKFwiZGl2XCIsIHsgc3RhdGljQ2xhc3M6IFwiZmxleCBmbGV4LWNvbCBweS0yXCIgfSwgW1xuICAgICAgICAgICAgX2MoXCJpbnB1dFwiLCB7XG4gICAgICAgICAgICAgIGRpcmVjdGl2ZXM6IFtcbiAgICAgICAgICAgICAgICB7XG4gICAgICAgICAgICAgICAgICBuYW1lOiBcIm1vZGVsXCIsXG4gICAgICAgICAgICAgICAgICByYXdOYW1lOiBcInYtbW9kZWxcIixcbiAgICAgICAgICAgICAgICAgIHZhbHVlOiBfdm0ubmFtZSxcbiAgICAgICAgICAgICAgICAgIGV4cHJlc3Npb246IFwibmFtZVwiXG4gICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICBdLFxuICAgICAgICAgICAgICBzdGF0aWNDbGFzczpcbiAgICAgICAgICAgICAgICBcInRleHQteGwgZm9udC1zZXJpZiB3LWZ1bGwgYm9yZGVyIGJnLWdyYXktMjAwIHAtNCBob3ZlcjpiZy13aGl0ZSBob3Zlcjpib3JkZXItdGVhbC03MDBcIixcbiAgICAgICAgICAgICAgY2xhc3M6IHtcbiAgICAgICAgICAgICAgICBcImJvcmRlci1yZWRcIjogX3ZtLmVycm9yc1tcIm5hbWVcIl1cbiAgICAgICAgICAgICAgfSxcbiAgICAgICAgICAgICAgYXR0cnM6IHtcbiAgICAgICAgICAgICAgICBwbGFjZWhvbGRlcjogX3ZtLnBsYWNlaG9sZGVycy5uYW1lLFxuICAgICAgICAgICAgICAgIHR5cGU6IFwidGV4dFwiLFxuICAgICAgICAgICAgICAgIHJlcXVpcmVkOiBcIlwiXG4gICAgICAgICAgICAgIH0sXG4gICAgICAgICAgICAgIGRvbVByb3BzOiB7IHZhbHVlOiBfdm0ubmFtZSB9LFxuICAgICAgICAgICAgICBvbjoge1xuICAgICAgICAgICAgICAgIGlucHV0OiBbXG4gICAgICAgICAgICAgICAgICBmdW5jdGlvbigkZXZlbnQpIHtcbiAgICAgICAgICAgICAgICAgICAgaWYgKCRldmVudC50YXJnZXQuY29tcG9zaW5nKSB7XG4gICAgICAgICAgICAgICAgICAgICAgcmV0dXJuXG4gICAgICAgICAgICAgICAgICAgIH1cbiAgICAgICAgICAgICAgICAgICAgX3ZtLm5hbWUgPSAkZXZlbnQudGFyZ2V0LnZhbHVlXG4gICAgICAgICAgICAgICAgICB9LFxuICAgICAgICAgICAgICAgICAgZnVuY3Rpb24oJGV2ZW50KSB7XG4gICAgICAgICAgICAgICAgICAgIHJldHVybiBfdm0uY2xlYXJFcnJvcihcIm5hbWVcIilcbiAgICAgICAgICAgICAgICAgIH1cbiAgICAgICAgICAgICAgICBdXG4gICAgICAgICAgICAgIH1cbiAgICAgICAgICAgIH0pLFxuICAgICAgICAgICAgX3ZtLl92KFwiIFwiKSxcbiAgICAgICAgICAgIF92bS5lcnJvcnNbXCJuYW1lXCJdXG4gICAgICAgICAgICAgID8gX2MoXG4gICAgICAgICAgICAgICAgICBcImRpdlwiLFxuICAgICAgICAgICAgICAgICAgeyBzdGF0aWNDbGFzczogXCJ0ZXh0LXJlZC01MDAgcHQtMiB0ZXh0LWxnIGZvbnQtc2VyaWZcIiB9LFxuICAgICAgICAgICAgICAgICAgW192bS5fdihfdm0uX3MoX3ZtLmVycm9yc1tcIm5hbWVcIl1bMF0pKV1cbiAgICAgICAgICAgICAgICApXG4gICAgICAgICAgICAgIDogX3ZtLl9lKClcbiAgICAgICAgICBdKSxcbiAgICAgICAgICBfdm0uX3YoXCIgXCIpLFxuICAgICAgICAgIF9jKFwiZGl2XCIsIHsgc3RhdGljQ2xhc3M6IFwiZmxleCBmbGV4LWNvbCBweS0yXCIgfSwgW1xuICAgICAgICAgICAgX2MoXCJpbnB1dFwiLCB7XG4gICAgICAgICAgICAgIGRpcmVjdGl2ZXM6IFtcbiAgICAgICAgICAgICAgICB7XG4gICAgICAgICAgICAgICAgICBuYW1lOiBcIm1vZGVsXCIsXG4gICAgICAgICAgICAgICAgICByYXdOYW1lOiBcInYtbW9kZWxcIixcbiAgICAgICAgICAgICAgICAgIHZhbHVlOiBfdm0uZW1haWwsXG4gICAgICAgICAgICAgICAgICBleHByZXNzaW9uOiBcImVtYWlsXCJcbiAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgIF0sXG4gICAgICAgICAgICAgIHN0YXRpY0NsYXNzOiBcInRleHQteGwgZm9udC1zZXJpZiB3LWZ1bGwgYm9yZGVyIGJnLWdyYXktMjAwIHAtNFwiLFxuICAgICAgICAgICAgICBjbGFzczoge1xuICAgICAgICAgICAgICAgIFwiYm9yZGVyLXJlZFwiOiBfdm0uZXJyb3JzW1wiZW1haWxcIl1cbiAgICAgICAgICAgICAgfSxcbiAgICAgICAgICAgICAgYXR0cnM6IHtcbiAgICAgICAgICAgICAgICBwbGFjZWhvbGRlcjogX3ZtLnBsYWNlaG9sZGVycy5lbWFpbCxcbiAgICAgICAgICAgICAgICB0eXBlOiBcImVtYWlsXCIsXG4gICAgICAgICAgICAgICAgcmVxdWlyZWQ6IFwiXCJcbiAgICAgICAgICAgICAgfSxcbiAgICAgICAgICAgICAgZG9tUHJvcHM6IHsgdmFsdWU6IF92bS5lbWFpbCB9LFxuICAgICAgICAgICAgICBvbjoge1xuICAgICAgICAgICAgICAgIGlucHV0OiBbXG4gICAgICAgICAgICAgICAgICBmdW5jdGlvbigkZXZlbnQpIHtcbiAgICAgICAgICAgICAgICAgICAgaWYgKCRldmVudC50YXJnZXQuY29tcG9zaW5nKSB7XG4gICAgICAgICAgICAgICAgICAgICAgcmV0dXJuXG4gICAgICAgICAgICAgICAgICAgIH1cbiAgICAgICAgICAgICAgICAgICAgX3ZtLmVtYWlsID0gJGV2ZW50LnRhcmdldC52YWx1ZVxuICAgICAgICAgICAgICAgICAgfSxcbiAgICAgICAgICAgICAgICAgIGZ1bmN0aW9uKCRldmVudCkge1xuICAgICAgICAgICAgICAgICAgICByZXR1cm4gX3ZtLmNsZWFyRXJyb3IoXCJlbWFpbFwiKVxuICAgICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgIF1cbiAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgfSksXG4gICAgICAgICAgICBfdm0uX3YoXCIgXCIpLFxuICAgICAgICAgICAgX3ZtLmVycm9yc1tcImVtYWlsXCJdXG4gICAgICAgICAgICAgID8gX2MoXG4gICAgICAgICAgICAgICAgICBcImRpdlwiLFxuICAgICAgICAgICAgICAgICAgeyBzdGF0aWNDbGFzczogXCJ0ZXh0LXJlZC01MDAgcHQtMiB0ZXh0LWxnIGZvbnQtc2VyaWZcIiB9LFxuICAgICAgICAgICAgICAgICAgW192bS5fdihfdm0uX3MoX3ZtLmVycm9yc1tcImVtYWlsXCJdWzBdKSldXG4gICAgICAgICAgICAgICAgKVxuICAgICAgICAgICAgICA6IF92bS5fZSgpXG4gICAgICAgICAgXSksXG4gICAgICAgICAgX3ZtLl92KFwiIFwiKSxcbiAgICAgICAgICBfYyhcImRpdlwiLCB7IHN0YXRpY0NsYXNzOiBcImZsZXggZmxleC1jb2wgcHktMlwiIH0sIFtcbiAgICAgICAgICAgIF9jKFwidGV4dGFyZWFcIiwge1xuICAgICAgICAgICAgICBkaXJlY3RpdmVzOiBbXG4gICAgICAgICAgICAgICAge1xuICAgICAgICAgICAgICAgICAgbmFtZTogXCJtb2RlbFwiLFxuICAgICAgICAgICAgICAgICAgcmF3TmFtZTogXCJ2LW1vZGVsXCIsXG4gICAgICAgICAgICAgICAgICB2YWx1ZTogX3ZtLm1lc3NhZ2UsXG4gICAgICAgICAgICAgICAgICBleHByZXNzaW9uOiBcIm1lc3NhZ2VcIlxuICAgICAgICAgICAgICAgIH1cbiAgICAgICAgICAgICAgXSxcbiAgICAgICAgICAgICAgc3RhdGljQ2xhc3M6IFwidGV4dC14bCBmb250LXNlcmlmIHctZnVsbCBib3JkZXIgYmctZ3JheS0yMDAgcC00XCIsXG4gICAgICAgICAgICAgIGNsYXNzOiB7XG4gICAgICAgICAgICAgICAgXCJib3JkZXItcmVkXCI6IF92bS5lcnJvcnNbXCJtZXNzYWdlXCJdXG4gICAgICAgICAgICAgIH0sXG4gICAgICAgICAgICAgIGF0dHJzOiB7XG4gICAgICAgICAgICAgICAgcGxhY2Vob2xkZXI6IF92bS5wbGFjZWhvbGRlcnMubWVzc2FnZSxcbiAgICAgICAgICAgICAgICByb3dzOiBcIjEwXCIsXG4gICAgICAgICAgICAgICAgY29sczogXCIzMFwiLFxuICAgICAgICAgICAgICAgIHJlcXVpcmVkOiBcIlwiXG4gICAgICAgICAgICAgIH0sXG4gICAgICAgICAgICAgIGRvbVByb3BzOiB7IHZhbHVlOiBfdm0ubWVzc2FnZSB9LFxuICAgICAgICAgICAgICBvbjoge1xuICAgICAgICAgICAgICAgIGlucHV0OiBbXG4gICAgICAgICAgICAgICAgICBmdW5jdGlvbigkZXZlbnQpIHtcbiAgICAgICAgICAgICAgICAgICAgaWYgKCRldmVudC50YXJnZXQuY29tcG9zaW5nKSB7XG4gICAgICAgICAgICAgICAgICAgICAgcmV0dXJuXG4gICAgICAgICAgICAgICAgICAgIH1cbiAgICAgICAgICAgICAgICAgICAgX3ZtLm1lc3NhZ2UgPSAkZXZlbnQudGFyZ2V0LnZhbHVlXG4gICAgICAgICAgICAgICAgICB9LFxuICAgICAgICAgICAgICAgICAgZnVuY3Rpb24oJGV2ZW50KSB7XG4gICAgICAgICAgICAgICAgICAgIHJldHVybiBfdm0uY2xlYXJFcnJvcihcIm1lc3NhZ2VcIilcbiAgICAgICAgICAgICAgICAgIH1cbiAgICAgICAgICAgICAgICBdXG4gICAgICAgICAgICAgIH1cbiAgICAgICAgICAgIH0pLFxuICAgICAgICAgICAgX3ZtLl92KFwiIFwiKSxcbiAgICAgICAgICAgIF92bS5lcnJvcnNbXCJtZXNzYWdlXCJdXG4gICAgICAgICAgICAgID8gX2MoXG4gICAgICAgICAgICAgICAgICBcImRpdlwiLFxuICAgICAgICAgICAgICAgICAgeyBzdGF0aWNDbGFzczogXCJ0ZXh0LXJlZC01MDAgcHQtMiB0ZXh0LWxnIGZvbnQtc2VyaWZcIiB9LFxuICAgICAgICAgICAgICAgICAgW192bS5fdihfdm0uX3MoX3ZtLmVycm9yc1tcIm1lc3NhZ2VcIl1bMF0pKV1cbiAgICAgICAgICAgICAgICApXG4gICAgICAgICAgICAgIDogX3ZtLl9lKClcbiAgICAgICAgICBdKSxcbiAgICAgICAgICBfdm0uX3YoXCIgXCIpLFxuICAgICAgICAgIF9jKFwiZGl2XCIsIHsgc3RhdGljQ2xhc3M6IFwiZmxleCBqdXN0aWZ5LWVuZFwiIH0sIFtcbiAgICAgICAgICAgIF9jKFwiYnV0dG9uXCIsIHtcbiAgICAgICAgICAgICAgc3RhdGljQ2xhc3M6XG4gICAgICAgICAgICAgICAgXCJ0ZXh0LXhsIHRleHQtdGVhbC03MDAgZm9udC1zZXJpZiBweC00IHB5LTIgYm9yZGVyLTQgYm9yZGVyLXRlYWwtNzAwIHJvdW5kZWQtZnVsbCBob3ZlcjpiZy10ZWFsLTcwMCBob3Zlcjp0ZXh0LXdoaXRlXCIsXG4gICAgICAgICAgICAgIGF0dHJzOiB7IHR5cGU6IFwiYnV0dG9uXCIsIGRpc2FibGVkOiBfdm0ubG9hZGluZyB9LFxuICAgICAgICAgICAgICBkb21Qcm9wczogeyB0ZXh0Q29udGVudDogX3ZtLl9zKF92bS5idXR0b25UZXh0KSB9LFxuICAgICAgICAgICAgICBvbjogeyBjbGljazogX3ZtLnNlbmRNYWlsIH1cbiAgICAgICAgICAgIH0pXG4gICAgICAgICAgXSksXG4gICAgICAgICAgX3ZtLl92KFwiIFwiKSxcbiAgICAgICAgICBfYyhcImlucHV0XCIsIHtcbiAgICAgICAgICAgIGRpcmVjdGl2ZXM6IFtcbiAgICAgICAgICAgICAge1xuICAgICAgICAgICAgICAgIG5hbWU6IFwibW9kZWxcIixcbiAgICAgICAgICAgICAgICByYXdOYW1lOiBcInYtbW9kZWxcIixcbiAgICAgICAgICAgICAgICB2YWx1ZTogX3ZtLnNwYW1Qcm90ZWN0aW9uLFxuICAgICAgICAgICAgICAgIGV4cHJlc3Npb246IFwic3BhbVByb3RlY3Rpb25cIlxuICAgICAgICAgICAgICB9XG4gICAgICAgICAgICBdLFxuICAgICAgICAgICAgc3RhdGljQ2xhc3M6IFwiaGlkZGVuXCIsXG4gICAgICAgICAgICBhdHRyczogeyB0eXBlOiBcInRleHRcIiB9LFxuICAgICAgICAgICAgZG9tUHJvcHM6IHsgdmFsdWU6IF92bS5zcGFtUHJvdGVjdGlvbiB9LFxuICAgICAgICAgICAgb246IHtcbiAgICAgICAgICAgICAgaW5wdXQ6IFtcbiAgICAgICAgICAgICAgICBmdW5jdGlvbigkZXZlbnQpIHtcbiAgICAgICAgICAgICAgICAgIGlmICgkZXZlbnQudGFyZ2V0LmNvbXBvc2luZykge1xuICAgICAgICAgICAgICAgICAgICByZXR1cm5cbiAgICAgICAgICAgICAgICAgIH1cbiAgICAgICAgICAgICAgICAgIF92bS5zcGFtUHJvdGVjdGlvbiA9ICRldmVudC50YXJnZXQudmFsdWVcbiAgICAgICAgICAgICAgICB9LFxuICAgICAgICAgICAgICAgIGZ1bmN0aW9uKCRldmVudCkge1xuICAgICAgICAgICAgICAgICAgcmV0dXJuIF92bS5jbGVhckVycm9yKFwiZW1haWxcIilcbiAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgIF1cbiAgICAgICAgICAgIH1cbiAgICAgICAgICB9KVxuICAgICAgICBdXG4gICAgICApXG59XG52YXIgc3RhdGljUmVuZGVyRm5zID0gW11cbnJlbmRlci5fd2l0aFN0cmlwcGVkID0gdHJ1ZVxuXG5leHBvcnQgeyByZW5kZXIsIHN0YXRpY1JlbmRlckZucyB9Il0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ContactForm.vue?vue&type=template&id=76db242e&\n");
 
 /***/ }),
 
@@ -334,24 +32,7 @@ render._withStripped = true
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_ContactForm__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/ContactForm */ "./resources/js/components/ContactForm.vue");
-
-
-var app = new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
-  el: "#vue",
-  render: function render(createElement) {
-    return createElement(_components_ContactForm__WEBPACK_IMPORTED_MODULE_1__["default"]);
-  }
-});
-var btn = document.getElementById("nav_btn");
-var links = document.getElementById("nav_links");
-btn.addEventListener("click", function () {
-  console.log('clicked');
-  links.classList.toggle("hidden");
-});
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ \"./node_modules/vue/dist/vue.common.js\");\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_ContactForm__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/ContactForm */ \"./resources/js/components/ContactForm.vue\");\n\n\nvar app = new vue__WEBPACK_IMPORTED_MODULE_0___default.a({\n  el: '#vue',\n  render: function render(createElement) {\n    return createElement(_components_ContactForm__WEBPACK_IMPORTED_MODULE_1__[\"default\"]);\n  }\n});\nvar btn = document.getElementById('nav_btn');\nvar links = document.getElementById('nav_links');\nbtn.addEventListener('click', function () {\n  links.classList.toggle('hidden');\n});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvanMvYXBwLmpzPzZkNDAiXSwibmFtZXMiOlsiYXBwIiwiVnVlIiwiZWwiLCJyZW5kZXIiLCJjcmVhdGVFbGVtZW50IiwiQ29udGFjdEZvcm0iLCJidG4iLCJkb2N1bWVudCIsImdldEVsZW1lbnRCeUlkIiwibGlua3MiLCJhZGRFdmVudExpc3RlbmVyIiwiY2xhc3NMaXN0IiwidG9nZ2xlIl0sIm1hcHBpbmdzIjoiQUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBRUE7QUFFQSxJQUFNQSxHQUFHLEdBQUcsSUFBSUMsMENBQUosQ0FBUTtBQUNsQkMsSUFBRSxFQUFFLE1BRGM7QUFHbEJDLFFBQU0sRUFBRSxnQkFBQUMsYUFBYTtBQUFBLFdBQUlBLGFBQWEsQ0FBQ0MsK0RBQUQsQ0FBakI7QUFBQTtBQUhILENBQVIsQ0FBWjtBQU1BLElBQU1DLEdBQUcsR0FBR0MsUUFBUSxDQUFDQyxjQUFULENBQXdCLFNBQXhCLENBQVo7QUFDQSxJQUFNQyxLQUFLLEdBQUdGLFFBQVEsQ0FBQ0MsY0FBVCxDQUF3QixXQUF4QixDQUFkO0FBQ0FGLEdBQUcsQ0FBQ0ksZ0JBQUosQ0FBcUIsT0FBckIsRUFBOEIsWUFBVztBQUN2Q0QsT0FBSyxDQUFDRSxTQUFOLENBQWdCQyxNQUFoQixDQUF1QixRQUF2QjtBQUNELENBRkQiLCJmaWxlIjoiLi9yZXNvdXJjZXMvanMvYXBwLmpzLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFZ1ZSBmcm9tICd2dWUnO1xuXG5pbXBvcnQgQ29udGFjdEZvcm0gZnJvbSAnLi9jb21wb25lbnRzL0NvbnRhY3RGb3JtJztcblxuY29uc3QgYXBwID0gbmV3IFZ1ZSh7XG4gIGVsOiAnI3Z1ZScsXG5cbiAgcmVuZGVyOiBjcmVhdGVFbGVtZW50ID0+IGNyZWF0ZUVsZW1lbnQoQ29udGFjdEZvcm0pLFxufSk7XG5cbmNvbnN0IGJ0biA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCduYXZfYnRuJyk7XG5jb25zdCBsaW5rcyA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCduYXZfbGlua3MnKTtcbmJ0bi5hZGRFdmVudExpc3RlbmVyKCdjbGljaycsIGZ1bmN0aW9uKCkge1xuICBsaW5rcy5jbGFzc0xpc3QudG9nZ2xlKCdoaWRkZW4nKTtcbn0pO1xuIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./resources/js/app.js\n");
 
 /***/ }),
 
@@ -363,32 +44,7 @@ btn.addEventListener("click", function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _ContactForm_vue_vue_type_template_id_76db242e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ContactForm.vue?vue&type=template&id=76db242e& */ "./resources/js/components/ContactForm.vue?vue&type=template&id=76db242e&");
-/* harmony import */ var _ContactForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ContactForm.vue?vue&type=script&lang=js& */ "./resources/js/components/ContactForm.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
-
-
-
-
-/* normalize component */
-
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _ContactForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _ContactForm_vue_vue_type_template_id_76db242e___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _ContactForm_vue_vue_type_template_id_76db242e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* hot reload */
-if (false) { var api; }
-component.options.__file = "resources/js/components/ContactForm.vue"
-/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ContactForm_vue_vue_type_template_id_76db242e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ContactForm.vue?vue&type=template&id=76db242e& */ \"./resources/js/components/ContactForm.vue?vue&type=template&id=76db242e&\");\n/* harmony import */ var _ContactForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ContactForm.vue?vue&type=script&lang=js& */ \"./resources/js/components/ContactForm.vue?vue&type=script&lang=js&\");\n/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ \"./node_modules/vue-loader/lib/runtime/componentNormalizer.js\");\n\n\n\n\n\n/* normalize component */\n\nvar component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(\n  _ContactForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n  _ContactForm_vue_vue_type_template_id_76db242e___WEBPACK_IMPORTED_MODULE_0__[\"render\"],\n  _ContactForm_vue_vue_type_template_id_76db242e___WEBPACK_IMPORTED_MODULE_0__[\"staticRenderFns\"],\n  false,\n  null,\n  null,\n  null\n  \n)\n\n/* hot reload */\nif (false) { var api; }\ncomponent.options.__file = \"resources/js/components/ContactForm.vue\"\n/* harmony default export */ __webpack_exports__[\"default\"] = (component.exports);//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvanMvY29tcG9uZW50cy9Db250YWN0Rm9ybS52dWU/MDE0OCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtBQUFBO0FBQUE7QUFBQTtBQUEwRjtBQUMzQjtBQUNMOzs7QUFHMUQ7QUFDNkY7QUFDN0YsZ0JBQWdCLDJHQUFVO0FBQzFCLEVBQUUsaUZBQU07QUFDUixFQUFFLHNGQUFNO0FBQ1IsRUFBRSwrRkFBZTtBQUNqQjtBQUNBO0FBQ0E7QUFDQTs7QUFFQTs7QUFFQTtBQUNBLElBQUksS0FBVSxFQUFFLFlBaUJmO0FBQ0Q7QUFDZSxnRiIsImZpbGUiOiIuL3Jlc291cmNlcy9qcy9jb21wb25lbnRzL0NvbnRhY3RGb3JtLnZ1ZS5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IHJlbmRlciwgc3RhdGljUmVuZGVyRm5zIH0gZnJvbSBcIi4vQ29udGFjdEZvcm0udnVlP3Z1ZSZ0eXBlPXRlbXBsYXRlJmlkPTc2ZGIyNDJlJlwiXG5pbXBvcnQgc2NyaXB0IGZyb20gXCIuL0NvbnRhY3RGb3JtLnZ1ZT92dWUmdHlwZT1zY3JpcHQmbGFuZz1qcyZcIlxuZXhwb3J0ICogZnJvbSBcIi4vQ29udGFjdEZvcm0udnVlP3Z1ZSZ0eXBlPXNjcmlwdCZsYW5nPWpzJlwiXG5cblxuLyogbm9ybWFsaXplIGNvbXBvbmVudCAqL1xuaW1wb3J0IG5vcm1hbGl6ZXIgZnJvbSBcIiEuLi8uLi8uLi9ub2RlX21vZHVsZXMvdnVlLWxvYWRlci9saWIvcnVudGltZS9jb21wb25lbnROb3JtYWxpemVyLmpzXCJcbnZhciBjb21wb25lbnQgPSBub3JtYWxpemVyKFxuICBzY3JpcHQsXG4gIHJlbmRlcixcbiAgc3RhdGljUmVuZGVyRm5zLFxuICBmYWxzZSxcbiAgbnVsbCxcbiAgbnVsbCxcbiAgbnVsbFxuICBcbilcblxuLyogaG90IHJlbG9hZCAqL1xuaWYgKG1vZHVsZS5ob3QpIHtcbiAgdmFyIGFwaSA9IHJlcXVpcmUoXCIvVXNlcnMvbWF6ZS9Db2RlL3NpdGUvbm9kZV9tb2R1bGVzL3Z1ZS1ob3QtcmVsb2FkLWFwaS9kaXN0L2luZGV4LmpzXCIpXG4gIGFwaS5pbnN0YWxsKHJlcXVpcmUoJ3Z1ZScpKVxuICBpZiAoYXBpLmNvbXBhdGlibGUpIHtcbiAgICBtb2R1bGUuaG90LmFjY2VwdCgpXG4gICAgaWYgKCFhcGkuaXNSZWNvcmRlZCgnNzZkYjI0MmUnKSkge1xuICAgICAgYXBpLmNyZWF0ZVJlY29yZCgnNzZkYjI0MmUnLCBjb21wb25lbnQub3B0aW9ucylcbiAgICB9IGVsc2Uge1xuICAgICAgYXBpLnJlbG9hZCgnNzZkYjI0MmUnLCBjb21wb25lbnQub3B0aW9ucylcbiAgICB9XG4gICAgbW9kdWxlLmhvdC5hY2NlcHQoXCIuL0NvbnRhY3RGb3JtLnZ1ZT92dWUmdHlwZT10ZW1wbGF0ZSZpZD03NmRiMjQyZSZcIiwgZnVuY3Rpb24gKCkge1xuICAgICAgYXBpLnJlcmVuZGVyKCc3NmRiMjQyZScsIHtcbiAgICAgICAgcmVuZGVyOiByZW5kZXIsXG4gICAgICAgIHN0YXRpY1JlbmRlckZuczogc3RhdGljUmVuZGVyRm5zXG4gICAgICB9KVxuICAgIH0pXG4gIH1cbn1cbmNvbXBvbmVudC5vcHRpb25zLl9fZmlsZSA9IFwicmVzb3VyY2VzL2pzL2NvbXBvbmVudHMvQ29udGFjdEZvcm0udnVlXCJcbmV4cG9ydCBkZWZhdWx0IGNvbXBvbmVudC5leHBvcnRzIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./resources/js/components/ContactForm.vue\n");
 
 /***/ }),
 
@@ -400,9 +56,7 @@ component.options.__file = "resources/js/components/ContactForm.vue"
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ContactForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./ContactForm.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ContactForm.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ContactForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ContactForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./ContactForm.vue?vue&type=script&lang=js& */ \"./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ContactForm.vue?vue&type=script&lang=js&\");\n/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__[\"default\"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ContactForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__[\"default\"]); //# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvanMvY29tcG9uZW50cy9Db250YWN0Rm9ybS52dWU/NmYzMiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtBQUFBO0FBQUEsd0NBQTJMLENBQWdCLHVQQUFHLEVBQUMiLCJmaWxlIjoiLi9yZXNvdXJjZXMvanMvY29tcG9uZW50cy9Db250YWN0Rm9ybS52dWU/dnVlJnR5cGU9c2NyaXB0Jmxhbmc9anMmLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IG1vZCBmcm9tIFwiLSEuLi8uLi8uLi9ub2RlX21vZHVsZXMvYmFiZWwtbG9hZGVyL2xpYi9pbmRleC5qcz8/cmVmLS00LTAhLi4vLi4vLi4vbm9kZV9tb2R1bGVzL3Z1ZS1sb2FkZXIvbGliL2luZGV4LmpzPz92dWUtbG9hZGVyLW9wdGlvbnMhLi9Db250YWN0Rm9ybS52dWU/dnVlJnR5cGU9c2NyaXB0Jmxhbmc9anMmXCI7IGV4cG9ydCBkZWZhdWx0IG1vZDsgZXhwb3J0ICogZnJvbSBcIi0hLi4vLi4vLi4vbm9kZV9tb2R1bGVzL2JhYmVsLWxvYWRlci9saWIvaW5kZXguanM/P3JlZi0tNC0wIS4uLy4uLy4uL25vZGVfbW9kdWxlcy92dWUtbG9hZGVyL2xpYi9pbmRleC5qcz8/dnVlLWxvYWRlci1vcHRpb25zIS4vQ29udGFjdEZvcm0udnVlP3Z1ZSZ0eXBlPXNjcmlwdCZsYW5nPWpzJlwiIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./resources/js/components/ContactForm.vue?vue&type=script&lang=js&\n");
 
 /***/ }),
 
@@ -414,13 +68,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ContactForm_vue_vue_type_template_id_76db242e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./ContactForm.vue?vue&type=template&id=76db242e& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ContactForm.vue?vue&type=template&id=76db242e&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ContactForm_vue_vue_type_template_id_76db242e___WEBPACK_IMPORTED_MODULE_0__["render"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ContactForm_vue_vue_type_template_id_76db242e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
-
-
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ContactForm_vue_vue_type_template_id_76db242e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./ContactForm.vue?vue&type=template&id=76db242e& */ \"./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ContactForm.vue?vue&type=template&id=76db242e&\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ContactForm_vue_vue_type_template_id_76db242e___WEBPACK_IMPORTED_MODULE_0__[\"render\"]; });\n\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ContactForm_vue_vue_type_template_id_76db242e___WEBPACK_IMPORTED_MODULE_0__[\"staticRenderFns\"]; });\n\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvanMvY29tcG9uZW50cy9Db250YWN0Rm9ybS52dWU/OWRlMCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEiLCJmaWxlIjoiLi9yZXNvdXJjZXMvanMvY29tcG9uZW50cy9Db250YWN0Rm9ybS52dWU/dnVlJnR5cGU9dGVtcGxhdGUmaWQ9NzZkYjI0MmUmLmpzIiwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0ICogZnJvbSBcIi0hLi4vLi4vLi4vbm9kZV9tb2R1bGVzL3Z1ZS1sb2FkZXIvbGliL2xvYWRlcnMvdGVtcGxhdGVMb2FkZXIuanM/P3Z1ZS1sb2FkZXItb3B0aW9ucyEuLi8uLi8uLi9ub2RlX21vZHVsZXMvdnVlLWxvYWRlci9saWIvaW5kZXguanM/P3Z1ZS1sb2FkZXItb3B0aW9ucyEuL0NvbnRhY3RGb3JtLnZ1ZT92dWUmdHlwZT10ZW1wbGF0ZSZpZD03NmRiMjQyZSZcIiJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./resources/js/components/ContactForm.vue?vue&type=template&id=76db242e&\n");
 
 /***/ }),
 
@@ -431,7 +79,7 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-// removed by extract-text-webpack-plugin
+eval("// removed by extract-text-webpack-plugin//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvc2Fzcy9hcHAuc2Nzcz80NGJjIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBIiwiZmlsZSI6Ii4vcmVzb3VyY2VzL3Nhc3MvYXBwLnNjc3MuanMiLCJzb3VyY2VzQ29udGVudCI6WyIvLyByZW1vdmVkIGJ5IGV4dHJhY3QtdGV4dC13ZWJwYWNrLXBsdWdpbiJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./resources/sass/app.scss\n");
 
 /***/ }),
 

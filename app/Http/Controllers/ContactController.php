@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Mail\ContactMail;
+use App\Rules\SpamProtection;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Mail;
 
@@ -17,8 +19,9 @@ class ContactController extends Controller
             'name' => 'required',
             'email' => 'required|email',
             'message' => 'required',
+            'spam_protection' => new SpamProtection,
         ])));
 
-        return response('done', 200);
+        return response('done', Response::HTTP_OK);
     }
 }

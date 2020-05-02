@@ -75,4 +75,15 @@ class ContactFormTest extends TestCase
         $response->assertSessionHasErrors(['message']);
         Mail::assertSent(ContactMail::class, 0);
     }
+
+    /** @test */
+    public function spam_protection_must_be_empty()
+    {
+        $response = $this->post(route('contact'), $this->validParams([
+            'spam_protection' => 'not-empty',
+        ]));
+
+        $response->assertSessionHasErrors(['spam_protection']);
+        Mail::assertSent(ContactMail::class, 0);
+    }
 }

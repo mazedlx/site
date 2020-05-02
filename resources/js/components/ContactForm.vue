@@ -1,7 +1,8 @@
 <template>
   <div
+    id="thanks"
     v-if="done"
-    class="subheading text-center py-8"
+    class="text-center text-3xl font-serif py-4"
   >
     {{ thankYouMessage }}
   </div>
@@ -72,37 +73,44 @@
         v-text="buttonText"
       ></button>
     </div>
+    <input
+      v-model="spamProtection"
+      @input="clearError('email')"
+      type="text"
+      class="hidden"
+    >
   </form>
 </template>
 <script>
-import axios from "axios";
+import axios from 'axios';
 
 export default {
   data() {
     return {
       done: false,
-      name: "",
-      email: "",
-      message: "",
+      name: '',
+      email: '',
+      message: '',
       errors: [],
       loading: false,
       thankYouMessage: this.isGerman()
-        ? "Vielen Dank für Ihre Nachricht, wir melden uns in Kürze."
-        : "Thank you for your message. We'll get back at you shortly.",
+        ? 'Vielen Dank für Ihre Nachricht, wir melden uns in Kürze.'
+        : 'Thank you for your message. We\'ll get back at you shortly.',
       placeholders: {
-        name: this.isGerman() ? "Ihr Name" : "Your name",
-        email: this.isGerman() ? "Ihre E-Mail-Adresse" : "Your email address",
+        name: this.isGerman() ? 'Ihr Name' : 'Your name',
+        email: this.isGerman() ? 'Ihre E-Mail-Adresse' : 'Your email address',
         message: this.isGerman()
-          ? "Ihre Idee die Sie mit uns umsetzen wollen"
-          : "Your awesome idea that needs realization",
+          ? 'Ihre Idee die Sie mit uns umsetzen wollen'
+          : 'Your awesome idea that needs realization',
       },
-      buttonText: this.isGerman() ? "Nachricht absenden" : "Send message",
+      spamProtection: '',
+      buttonText: this.isGerman() ? 'Nachricht absenden' : 'Send message',
     };
   },
 
   methods: {
     isGerman: function () {
-      return window.locale === "de";
+      return window.locale === 'de';
     },
 
     clearError: function (key) {
@@ -112,18 +120,20 @@ export default {
     sendMail: async function () {
       this.loading = true;
       try {
-        const response = await axios.post("/contact", {
+        await axios.post('/contact', {
           name: this.name,
           email: this.email,
           message: this.message,
+          spam_protection: this.spamProtection,
           locale: window.locale,
         });
-        this.name = "";
-        this.email = "";
-        this.message = "";
+        this.name = '';
+        this.email = '';
+        this.message = '';
         this.done = true;
+        document.getElementById('thanks').scrollIntoView();
       } catch (error) {
-        this.errors = error.response.data.errors;
+        this.errors = error.repsonse && error.response.data.errors;
         this.loading = false;
       }
     },
