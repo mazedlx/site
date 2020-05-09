@@ -13,12 +13,3 @@
     php artisan optimize
     php artisan up
 @endtask
-
-@task('quick', ['on' => 'web'])
-    cd /var/www/html/site
-    php artisan down
-    git stash
-    git pull
-    php artisan optimize
-    php artisan up
-@endtask
