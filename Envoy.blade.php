@@ -1,7 +1,7 @@
 @servers(['web' => ['maze@mazedlx.net']])
 
-@story('deploy', ['on' => 'web'])
-    cd
+@story('deploy')
+    htdocs
     down
     git
     composer
@@ -10,14 +10,14 @@
     up
 @endstory
 
-@story('quick', ['on' => 'web'])
-    cd
+@story('quick')
+    htdocs
     down
     git
     up
 @endstory
 
-@task('cd')
+@task('htdocs')
     cd /var/www/html/site
 @endtask
 
