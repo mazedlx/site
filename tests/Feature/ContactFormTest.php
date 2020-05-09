@@ -20,6 +20,7 @@ class ContactFormTest extends TestCase
             'name' => 'Bob Doe',
             'email' => 'bob@example.com',
             'message' => 'Yo, what up dog!',
+            'spam_protection' => '',
         ], $overrides);
     }
 
@@ -83,7 +84,6 @@ class ContactFormTest extends TestCase
             'spam_protection' => 'not-empty',
         ]));
 
-        $response->assertSessionHasErrors(['spam_protection']);
         Mail::assertSent(ContactMail::class, 0);
     }
 }
