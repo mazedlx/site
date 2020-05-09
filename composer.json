@@ -16,10 +16,10 @@
     "mazedlx/laravel-feature-policy": "1.*",
     "nothingworks/blade-svg": "^0.3.0",
     "spatie/laravel-csp": "^2.2.0",
-    "spatie/laravel-responsecache": "6.2.*"
+    "spatie/laravel-responsecache": "6.2.*",
+    "facade/ignition": "^2.0"
   },
   "require-dev": {
-    "facade/ignition": "^2.0",
     "fzaninotto/faker": "^1.9.1",
     "mockery/mockery": "^1.0",
     "nunomaduro/collision": "^4.1",
