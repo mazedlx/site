@@ -19,7 +19,7 @@ class ContactFormTest extends TestCase
         return array_merge([
             'name' => 'Bob Doe',
             'email' => 'bob@example.com',
-            'message' => 'Yo, what up dog!',
+            'message' => 'Yo, what up dog! This should be longer than 30 characters.',
             'spam_protection' => '',
         ], $overrides);
     }
