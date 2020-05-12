@@ -86,4 +86,15 @@ class ContactFormTest extends TestCase
 
         Mail::assertSent(ContactMail::class, 0);
     }
+
+    /** @test  */
+    public function message_must_be_at_least_30_chars_long()
+    {
+        $response = $this->post(route('contact'), $this->validParams([
+            'message' => 'this message is too short',
+        ]));
+
+        $response->assertSessionHasErrors(['message']);
+        Mail::assertSent(ContactMail::class, 0);
+    }
 }

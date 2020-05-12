@@ -21,7 +21,7 @@ class ContactController extends Controller
         Mail::send(new ContactMail($request->validate([
             'name' => 'required',
             'email' => 'required|email',
-            'message' => 'required',
+            'message' => 'required|min:30',
         ])));
 
         return response('done', Response::HTTP_OK);
