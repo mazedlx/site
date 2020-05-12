@@ -27,6 +27,7 @@ before_install:
   - mysql -e "create database IF NOT EXISTS mazedlx_net;" -uroot
 
 before_script:
+    - chmod -R 777 /var/www/html/site/storage/logs
     - php artisan migrate:refresh --seed --force
 
 install:
