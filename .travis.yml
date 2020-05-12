@@ -27,13 +27,11 @@ before_install:
   - mysql -e "create database IF NOT EXISTS mazedlx_net;" -uroot
 
 before_script:
-    - chmod -R 777 /var/www/html/site/storage/logs
     - php artisan migrate:refresh --seed --force
 
 install:
-  - if [[ $setup = 'basic' ]]; then travis_retry composer install --no-interaction --prefer-dist; fi
-  - if [[ $setup = 'stable' ]]; then travis_retry composer update --prefer-dist --no-interaction --prefer-stable; fi
-  - if [[ $setup = 'lowest' ]]; then travis_retry composer update --prefer-dist --no-interaction --prefer-lowest --prefer-stable; fi
+  - travis_retry composer install --no-interaction --prefer-dist
+  - travis_retry composer update --no-interaction --prefer-dist
 
 script:
   - vendor/bin/phpunit
