@@ -8,8 +8,7 @@
   ],
   "license": "MIT",
   "require": {
-    "php": "^7.2",
-    "blade-ui-kit/blade-icons": "^0.4.5",
+    "blade-ui-kit/blade-icons": "^0.5",
     "facade/ignition": "^2.3.6",
     "fideloper/proxy": "^4.0",
     "guzzlehttp/guzzle": "^7.0.1",
