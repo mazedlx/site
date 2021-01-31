@@ -10,6 +10,7 @@
         <li>15" MacBook Pro (2017, 16GB RAM, 500GB SSD)</li>
         <li>iPhone Xs</li>
         <li>Beats Studio 3 Wireless</li>
+        <li>AKG K92</li>
         <li>Apple AirPods 2nd Generation</li>
         <li>Apple Watch Series 2</li>
         <li>Røde Podcaster Mic/PSM1 Shock Mount/PSA1 Boom Arm</li>
